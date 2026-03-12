@@ -51,7 +51,34 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <meta name="generator" content={Astro.generator} />
-  </head>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Wilfred Morgan",
+      "url": "https://wilfredmorgan.com",
+      "jobTitle": "Principal Architect",
+      "description": "Principal Architect and AI systems engineer. Builder of Dark Factories — fully autonomous, AI-orchestrated operational pipelines.",
+      "knowsAbout": [
+        "AI Systems Architecture",
+        "Dark Factory Design",
+        "Enterprise AI Transformation",
+        "Multi-Agent Systems",
+        "Autonomous Operations",
+        "LangFlow",
+        "Semantic Kernel",
+        "Azure",
+        "Python"
+      ],
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "info@wilfredmorgan.com",
+        "contactType": "Business Inquiries"
+      }
+    })} />
+</head>
   <body>
     <slot />
   </body>
