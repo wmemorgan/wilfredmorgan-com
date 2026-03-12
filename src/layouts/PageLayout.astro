@@ -8,6 +8,8 @@ interface Props {
   description?: string;
   ogImage?: string;
   noIndex?: boolean;
+  ogType?: string;
+  extraJsonLd?: Record<string, any>[];
 }
 
 const props = Astro.props;

@@ -13,11 +13,21 @@ const allArticles = await getCollection("writing", ({ data }) => !data.draft);
 const articles = allArticles.sort((a, b) =>
   b.data.date.localeCompare(a.data.date)
 );
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wilfredmorgan.com" },
+    { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://wilfredmorgan.com/writing" }
+  ]
+};
 ---
 
 <PageLayout
   title="Writing — Wilfred Morgan"
   description="Thought leadership on Dark Factory methodology, AI transformation, and autonomous systems design."
+  extraJsonLd={[breadcrumbSchema]}
 >
   <section class="py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

@@ -5,11 +5,60 @@
 // SDS Build: WM_AboutPage_2026-03-11_v1
 
 import PageLayout from "../../layouts/PageLayout.astro";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wilfredmorgan.com" },
+    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://wilfredmorgan.com/about" }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a Dark Factory in AI architecture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Dark Factory is a fully autonomous, AI-orchestrated operational pipeline that eliminates human operator touchpoints between task intake and artifact delivery. It operates at L4–L5 maturity levels, using multi-agent systems to handle strategy, execution, and quality control without manual intervention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does Wilfred Morgan specialize in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wilfred Morgan is a Principal Architect and AI systems engineer with over 15 years of experience. He specializes in designing and deploying Dark Factories — fully autonomous AI-orchestrated operational pipelines — and advises CTO, VP Engineering, and Head of AI at F500 and high-growth organizations on enterprise AI transformation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Sovereign Council multi-agent system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Sovereign Council is Wilfred Morgan's flagship project — a live 13-agent AI system running across five operational domains (strategy, legal, venture, financial intelligence, and digital build execution) as primary business infrastructure. It operates at L4–L5 Dark Factory maturity with zero human operator touchpoints."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wilfred Morgan available for speaking engagements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Wilfred Morgan is available for conferences, keynotes, and panels on autonomous systems design, AI transformation at enterprise scale, Dark Factory architecture, and multi-agent system design. Target audiences include technology leadership, enterprise AI practitioners, and innovation forums."
+      }
+    }
+  ]
+};
 ---
 
 <PageLayout
   title="About — Wilfred Morgan"
   description="Wilfred Morgan — Principal Architect and AI systems engineer with 15+ years of experience building enterprise-grade systems."
+  extraJsonLd={[breadcrumbSchema, faqSchema]}
 >
   <section class="py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

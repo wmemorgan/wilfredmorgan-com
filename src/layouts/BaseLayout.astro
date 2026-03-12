@@ -7,6 +7,8 @@ interface Props {
   description?: string;
   ogImage?: string;
   noIndex?: boolean;
+  ogType?: string;
+  extraJsonLd?: Record<string, any>[];
 }
 
 const {
@@ -14,6 +16,8 @@ const {
   description = SITE.description,
   ogImage = SITE.ogImage,
   noIndex = false,
+  ogType = "website",
+  extraJsonLd = [],
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -30,10 +34,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <!-- SEO -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noIndex && <meta name="robots" content="noindex,nofollow" />}
+    {noIndex ? <meta name="robots" content="noindex,nofollow" /> : <meta name="robots" content="index,follow" />}
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -78,6 +82,24 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         "contactType": "Business Inquiries"
       }
     })} />
+
+    <!-- WebSite Schema (AEO) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Wilfred Morgan",
+      "url": "https://wilfredmorgan.com",
+      "description": "Principal Architect and AI systems engineer building Dark Factories — autonomous AI delivery pipelines for enterprise teams.",
+      "author": {
+        "@type": "Person",
+        "name": "Wilfred Morgan"
+      }
+    })} />
+
+    <!-- Extra JSON-LD schemas -->
+    {extraJsonLd.map((schema) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    ))}
 </head>
   <body>
     <slot />

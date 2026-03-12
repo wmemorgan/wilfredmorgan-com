@@ -10,11 +10,35 @@ import AuthorityStatement from "../components/AuthorityStatement.astro";
 import DarkFactoryProof from "../components/DarkFactoryProof.astro";
 import TechStackMarquee from "../components/TechStackMarquee.astro";
 import CTASection from "../components/CTASection.astro";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How can enterprise AI transformation be completed in 90 days instead of 18 months?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By deploying a Dark Factory architecture — a fully autonomous, AI-orchestrated operational pipeline that compresses manual workflow overhead. This approach replaces sequential human-dependent processes with multi-agent systems operating at L4–L5 maturity, eliminating handoff delays and reducing cycle time by 70% or more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a Dark Factory in enterprise AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Dark Factory is a fully autonomous, AI-orchestrated operational pipeline with zero human operator touchpoints between task intake and artifact delivery. Named after the manufacturing concept of 'lights-out' factories, Dark Factories in AI architecture use multi-agent systems to handle complete operational domains autonomously."
+      }
+    }
+  ]
+};
 ---
 
 <PageLayout
   title="Wilfred Morgan — The Nexus Architect"
   description="Principal Architect and AI systems engineer building Dark Factories — fully autonomous, AI-orchestrated operational pipelines that compress 18 months of enterprise transformation into 90 days."
+  extraJsonLd={[faqSchema]}
 >
   <Hero />
   <AuthorityStatement />

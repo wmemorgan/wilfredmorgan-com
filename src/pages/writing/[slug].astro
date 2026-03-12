@@ -16,11 +16,41 @@ export async function getStaticPaths() {
 
 const { article } = Astro.props;
 const { Content } = await article.render();
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": article.data.title,
+  "description": article.data.excerpt,
+  "datePublished": article.data.date,
+  "author": {
+    "@type": "Person",
+    "name": "Wilfred Morgan",
+    "url": "https://wilfredmorgan.com"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Wilfred Morgan",
+    "url": "https://wilfredmorgan.com"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wilfredmorgan.com" },
+    { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://wilfredmorgan.com/writing" },
+    { "@type": "ListItem", "position": 3, "name": article.data.title, "item": `https://wilfredmorgan.com/writing/${article.slug}` }
+  ]
+};
 ---
 
 <PageLayout
   title={`${article.data.title} — Wilfred Morgan`}
   description={article.data.excerpt}
+  extraJsonLd={[articleSchema, breadcrumbSchema]}
+  ogType="article"
 >
   <article class="py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

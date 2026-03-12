@@ -41,11 +41,21 @@ const projects = [
     flagship: false,
   },
 ];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://wilfredmorgan.com" },
+    { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://wilfredmorgan.com/work" }
+  ]
+};
 ---
 
 <PageLayout
   title="Architecture Work — Wilfred Morgan"
   description="Project archive and case studies from Wilfred Morgan — Principal Architect and AI systems engineer."
+  extraJsonLd={[breadcrumbSchema]}
 >
   <section class="py-24 lg:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
