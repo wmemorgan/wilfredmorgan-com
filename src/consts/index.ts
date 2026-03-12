@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Wilfred Morgan",
-  title: "Wilfred Morgan — The Nexus Architect",
+  title: "Wilfred Morgan — Principal Architect & AI Engineer",
   description:
-    "Principal Architect and AI systems engineer. Builder of Dark Factories — fully autonomous, AI-orchestrated operational pipelines. Available for elite engagements and speaking.",
+    "Principal Architect and AI systems engineer building Dark Factories — autonomous AI delivery pipelines for enterprise teams. Consultant. Speaker. Builder.",
   url: "https://wilfredmorgan.com",
   ogImage: "/og-default.png",
   navLinks: [
