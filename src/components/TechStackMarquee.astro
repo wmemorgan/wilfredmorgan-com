@@ -1,0 +1,103 @@
+---
+// TechStackMarquee.astro
+// Scrolling tech stack — Azure · Claude · Python · LangFlow · Semantic Kernel · etc.
+---
+
+<section
+  class="relative py-16 overflow-hidden border-y border-gold/10"
+  aria-label="Technology Stack"
+>
+  <!-- Fade edges -->
+  <div
+    class="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
+    style="background: linear-gradient(90deg, #0F172A 0%, transparent 100%);"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
+    style="background: linear-gradient(-90deg, #0F172A 0%, transparent 100%);"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Label — center top -->
+  <div class="text-center mb-8">
+    <span class="section-label">Stack</span>
+  </div>
+
+  <!-- Marquee track -->
+  <div class="relative overflow-hidden" aria-hidden="true">
+    <div class="flex animate-marquee gap-0 whitespace-nowrap" style="width: max-content;">
+      {
+        /* Doubled for seamless loop */
+        [
+          "Azure",
+          "Claude AI",
+          "Python",
+          "LangFlow",
+          "Semantic Kernel",
+          "Cursor",
+          "Astro",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "FastAPI",
+          "GitHub Actions",
+          "Netlify",
+          "Azure Static Web Apps",
+          "Azure",
+          "Claude AI",
+          "Python",
+          "LangFlow",
+          "Semantic Kernel",
+          "Cursor",
+          "Astro",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "FastAPI",
+          "GitHub Actions",
+          "Netlify",
+          "Azure Static Web Apps",
+        ].map((tech, i) => (
+          <span
+            class:list={[
+              "inline-flex items-center gap-4 px-8 font-mono tracking-widest uppercase",
+              i % 3 === 0
+                ? "text-gold/70 text-sm font-700"
+                : "text-slate-500 text-xs",
+            ]}
+            style="height: 2.5rem;"
+          >
+            {tech}
+            <span class="text-gold/20">·</span>
+          </span>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Accessible list for screen readers -->
+  <ul class="sr-only">
+    {
+      [
+        "Azure",
+        "Claude AI",
+        "Python",
+        "LangFlow",
+        "Semantic Kernel",
+        "Cursor",
+        "Astro",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "FastAPI",
+        "GitHub Actions",
+        "Netlify",
+        "Azure Static Web Apps",
+      ].map((tech) => <li>{tech}</li>)
+    }
+  </ul>
+</section>

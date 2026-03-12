@@ -1,0 +1,133 @@
+---
+// src/pages/about/index.astro
+// wilfredmorgan.com — About
+// STATUS: Scaffolded with core content — Phase 2 final copy pass
+// SDS Build: WM_AboutPage_2026-03-11_v1
+
+import PageLayout from "../../layouts/PageLayout.astro";
+---
+
+<PageLayout
+  title="About — Wilfred Morgan"
+  description="Wilfred Morgan — Principal Architect and AI systems engineer with 15+ years of experience building enterprise-grade systems."
+>
+  <section class="py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <!-- Page header -->
+      <div class="grid lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-3">
+          <span class="section-label">About</span>
+          <div class="mt-3 w-12 h-px bg-gold/40"></div>
+        </div>
+        <div class="lg:col-span-9">
+          <h1
+            class="font-heading font-800 text-slate-100 leading-tight mb-4"
+            style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.03em;"
+          >
+            The Architect
+          </h1>
+        </div>
+      </div>
+
+      <!-- Bio content -->
+      <div class="grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-3">
+          <!-- Compact identity card -->
+          <div class="sticky top-24 border border-gold/15 p-6">
+            <div class="flex items-center justify-center w-16 h-16 border border-gold/30 font-mono text-xl font-700 text-gold mb-4">
+              WM
+            </div>
+            <div class="space-y-3">
+              {
+                [
+                  { label: "Role", value: "Principal Architect" },
+                  { label: "Specialization", value: "AI Systems · Dark Factory" },
+                  { label: "Experience", value: "15+ years" },
+                  { label: "Rate", value: "$1,000/hr advisory" },
+                  { label: "Status", value: "Available for engagements" },
+                ].map((item) => (
+                  <div>
+                    <div class="font-mono text-xs text-slate-600 tracking-wider">{item.label}</div>
+                    <div class="font-body text-sm text-slate-300 mt-0.5">{item.value}</div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+
+        <!-- Main bio -->
+        <div class="lg:col-span-9">
+          <div class="prose-custom space-y-6 font-body text-slate-400" style="font-size: 1.0625rem; line-height: 1.8;">
+            <p>
+              I am a Principal Architect and AI systems engineer with over 15 years
+              of experience designing and deploying enterprise-grade technology systems.
+              I am not a manager who moved into AI strategy. I am a builder — someone
+              who has been writing code, designing architectures, and shipping production
+              systems throughout my entire career.
+            </p>
+            <p>
+              My current focus is the architecture and deployment of
+              <span class="text-slate-200 font-600">Dark Factories</span> — fully
+              autonomous, AI-orchestrated operational pipelines that eliminate human
+              operator touchpoints between task intake and artifact delivery. The
+              Sovereign Council, my flagship project, is a live 13-agent system running
+              across five operational domains as my primary business infrastructure.
+            </p>
+            <p>
+              I work with CTO, VP Engineering, and Head of AI at F500 and high-growth
+              organizations who are done with exploration and ready for execution. My
+              advisory engagements are structured for organizations that have a real
+              transformation problem and the organizational will to solve it in 90 days
+              instead of 18 months.
+            </p>
+            <p>
+              I am also available for speaking engagements, conference panels, and
+              keynotes on autonomous systems design, AI transformation at enterprise
+              scale, and the future of human-AI collaboration in technical organizations.
+            </p>
+          </div>
+
+          <!-- Divider -->
+          <div class="my-12 w-full h-px bg-gold/10"></div>
+
+          <!-- Speaking section -->
+          <div>
+            <h2 class="font-heading font-700 text-slate-100 text-xl mb-6">
+              Speaking & Panels
+            </h2>
+            <p class="font-body text-slate-400 mb-8" style="line-height: 1.75;">
+              Available for conferences, panels, and keynotes on autonomous systems,
+              AI transformation, and the architecture of Dark Factory operations.
+              Target audiences: technology leadership, enterprise AI practitioners,
+              innovation forums.
+            </p>
+
+            <div class="space-y-3">
+              {
+                [
+                  { topic: "Dark Factory Architecture", desc: "How to design and deploy fully autonomous operational pipelines at enterprise scale." },
+                  { topic: "AI Transformation That Actually Ships", desc: "The architectural decisions that separate successful AI transformations from expensive experiments." },
+                  { topic: "The 90-Day Enterprise Transformation", desc: "Practical methodology for compressing 18-month roadmaps without compromising quality or security." },
+                  { topic: "Multi-Agent System Design", desc: "Agent taxonomy, orchestration patterns, and failure mode management for production AI systems." },
+                ].map((talk) => (
+                  <div class="border border-white/5 hover:border-gold/15 p-5 transition-all duration-200">
+                    <h3 class="font-heading font-600 text-slate-200 text-sm mb-1">{talk.topic}</h3>
+                    <p class="font-body text-slate-500 text-sm">{talk.desc}</p>
+                  </div>
+                ))
+              }
+            </div>
+
+            <div class="mt-8">
+              <a href="/contact" class="btn-ghost">
+                Speaking Inquiry →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>

@@ -1,0 +1,103 @@
+---
+// CTASection.astro
+// Dual CTA: Book a Strategy Call / View Architecture Work
+---
+
+<section
+  class="relative py-24 lg:py-32 overflow-hidden"
+  aria-label="Call to Action"
+>
+  <!-- Background glow -->
+  <div
+    class="absolute inset-0 pointer-events-none"
+    style="background: radial-gradient(ellipse 70% 60% at 50% 100%, rgba(212,175,55,0.06) 0%, transparent 70%);"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Top border line -->
+  <div
+    class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent"
+    aria-hidden="true"
+  ></div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+      <!-- Left: text -->
+      <div class="lg:col-span-7">
+        <span class="section-label block mb-6">Ready to Build</span>
+        <h2
+          class="font-heading font-800 text-slate-100 leading-tight mb-6"
+          style="font-size: clamp(2rem, 4vw, 3.5rem); letter-spacing: -0.02em;"
+        >
+          If you're serious about
+          <br />
+          <span class="text-gradient-gold">AI transformation</span>
+          <br />
+          — let's talk architecture.
+        </h2>
+        <p class="font-body text-slate-400 max-w-xl mb-8" style="font-size: 1.0625rem; line-height: 1.75;">
+          Strategy calls are reserved for CTO, VP Engineering, and Head of AI
+          engagements at organizations ready to move from exploration to
+          execution. Come with a real problem. Leave with a real plan.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="flex flex-col sm:flex-row items-start gap-4">
+          <a href="/contact" class="btn-gold">
+            Book a Strategy Call
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/work" class="btn-ghost">
+            View Architecture Work
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: engagement card -->
+      <div class="lg:col-span-5">
+        <div
+          class="border border-gold/20 p-8"
+          style="background: linear-gradient(135deg, rgba(212,175,55,0.04) 0%, transparent 100%);"
+        >
+          <!-- Card header -->
+          <div class="flex items-center justify-between mb-6 pb-6 border-b border-gold/10">
+            <span class="font-heading font-600 text-slate-100 text-sm tracking-wide">
+              Strategy Engagement
+            </span>
+            <span class="font-mono text-gold font-700 text-lg">$1K/hr</span>
+          </div>
+
+          <!-- Features -->
+          <ul class="space-y-3 mb-8">
+            {
+              [
+                "90-minute architecture deep-dive",
+                "Current state assessment",
+                "Dark Factory readiness scoring",
+                "Transformation roadmap (60–90 day)",
+                "Follow-on retainer available",
+              ].map((item) => (
+                <li class="flex items-start gap-3">
+                  <span class="text-gold/60 mt-0.5 shrink-0">▸</span>
+                  <span class="font-body text-slate-400 text-sm">{item}</span>
+                </li>
+              ))
+            }
+          </ul>
+
+          <!-- Audience qualifier -->
+          <div class="border border-slate-800 p-4">
+            <p class="font-mono text-xs text-slate-600 tracking-wider leading-relaxed">
+              QUALIFIED: CTO · VP Engineering · Head of AI
+              <br />
+              F500 · High-growth · Venture-backed
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

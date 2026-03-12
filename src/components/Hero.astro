@@ -1,0 +1,138 @@
+---
+// Hero.astro — wilfredmorgan.com
+// Commanding. Dark mode. NOT a welcome message.
+---
+
+<section
+  class="relative min-h-screen flex items-center overflow-hidden"
+  aria-label="Hero"
+>
+  <!-- Background: grid + radial gradient -->
+  <div
+    class="absolute inset-0 bg-grid-obsidian bg-grid-sm opacity-100"
+    aria-hidden="true"
+  ></div>
+  <div
+    class="absolute inset-0 bg-hero-gradient"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Noise texture overlay -->
+  <div
+    class="absolute inset-0 opacity-[0.03]"
+    style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Decorative: vertical rule left -->
+  <div
+    class="absolute left-6 lg:left-12 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gold/20 to-transparent"
+    aria-hidden="true"
+  ></div>
+
+  <!-- Decorative: line numbers / coordinates -->
+  <div
+    class="absolute left-8 lg:left-14 top-1/2 -translate-y-1/2 flex flex-col gap-6 opacity-20"
+    aria-hidden="true"
+  >
+    {
+      ["01", "02", "03", "04", "05"].map((n) => (
+        <span class="font-mono text-xs text-gold/60 tracking-widest">{n}</span>
+      ))
+    }
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
+    <div class="max-w-4xl">
+      <!-- Section label -->
+      <div class="flex items-center gap-3 mb-8 animate-fade-up opacity-0 animate-delay-100">
+        <span class="inline-block w-8 h-px bg-gold/60"></span>
+        <span class="section-label">Principal Architect · AI Systems Engineer</span>
+      </div>
+
+      <!-- Name -->
+      <h1
+        class="font-heading font-900 text-slate-100 mb-4 animate-fade-up opacity-0 animate-delay-200"
+        style="font-size: clamp(3.5rem, 8vw, 7rem); line-height: 1; letter-spacing: -0.03em;"
+      >
+        Wilfred
+        <br />
+        <span class="text-gradient-gold">Morgan</span>
+      </h1>
+
+      <!-- Positioning line — punchy, commanding -->
+      <div class="mb-10 animate-fade-up opacity-0 animate-delay-300">
+        <p
+          class="font-body text-slate-300 max-w-2xl"
+          style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 1.5;"
+        >
+          I build{" "}
+          <span class="text-gold font-600">Dark Factories</span> — autonomous,
+          AI-orchestrated pipelines that compress 18 months of enterprise
+          transformation into 90 days. No human operators between task and
+          delivery.
+        </p>
+      </div>
+
+      <!-- CTA row -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-fade-up opacity-0 animate-delay-400">
+        <a href="/contact" class="btn-gold">
+          Book a Strategy Call
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            class="ml-1"
+          >
+            <path
+              d="M3 8h10M9 4l4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+        <a href="/work" class="btn-ghost">
+          View Architecture Work
+        </a>
+      </div>
+
+      <!-- Stat bar -->
+      <div
+        class="mt-16 pt-8 border-t border-gold/10 grid grid-cols-2 sm:grid-cols-3 gap-8 animate-fade-up opacity-0 animate-delay-500"
+      >
+        {
+          [
+            { value: "15+", label: "Years principal-level" },
+            { value: "L4–L5", label: "Dark Factory maturity" },
+            { value: "$1K/hr", label: "Advisory engagement rate" },
+          ].map((stat) => (
+            <div>
+              <div
+                class="font-heading font-800 text-gold"
+                style="font-size: clamp(1.5rem, 3vw, 2.25rem);"
+              >
+                {stat.value}
+              </div>
+              <div class="font-mono text-xs text-slate-500 tracking-wider mt-1">
+                {stat.label}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div
+    class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in opacity-0 animate-delay-700"
+    aria-hidden="true"
+  >
+    <span class="font-mono text-xs text-slate-600 tracking-widest">SCROLL</span>
+    <div class="w-px h-8 bg-gradient-to-b from-gold/40 to-transparent"></div>
+  </div>
+</section>

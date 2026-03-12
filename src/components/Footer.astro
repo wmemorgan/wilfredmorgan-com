@@ -1,0 +1,62 @@
+---
+import { SITE } from "../consts/index";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="relative border-t border-gold/10 bg-obsidian">
+  <!-- Gold top line -->
+  <div class="h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"></div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8 py-12">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+
+      <!-- Left: Wordmark + tagline -->
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center justify-center w-7 h-7 border border-gold/30 text-gold font-mono text-xs font-700">
+            WM
+          </span>
+          <span class="font-heading text-xs tracking-[0.2em] uppercase text-slate-400">
+            Wilfred Morgan
+          </span>
+        </div>
+        <p class="font-mono text-xs text-slate-600 tracking-wider">
+          Principal Architect · AI Systems Engineer
+        </p>
+      </div>
+
+      <!-- Center: Nav -->
+      <nav aria-label="Footer navigation">
+        <ul class="flex flex-wrap gap-6">
+          {SITE.navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="font-heading text-xs tracking-[0.15em] uppercase text-slate-500 hover:text-gold transition-colors duration-200"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <!-- Right: CTA -->
+      <a href="/contact" class="btn-ghost text-xs py-2 px-4 shrink-0">
+        Book a Call →
+      </a>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="font-mono text-xs text-slate-700">
+        © {year} Wilfred Morgan. All rights reserved.
+      </p>
+      <div class="flex items-center gap-1">
+        <span class="inline-block w-1.5 h-1.5 rounded-full bg-gold/40 animate-pulse"></span>
+        <span class="font-mono text-xs text-slate-700">Dark Factory · Sovereign Council</span>
+      </div>
+    </div>
+  </div>
+</footer>

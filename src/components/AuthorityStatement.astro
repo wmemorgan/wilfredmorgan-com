@@ -1,0 +1,104 @@
+---
+// AuthorityStatement.astro
+// What Wilfred builds and why it matters to the visitor
+---
+
+<section
+  class="relative py-24 lg:py-32 overflow-hidden"
+  aria-label="Authority Statement"
+>
+  <!-- Decorative right edge line -->
+  <div
+    class="absolute right-6 lg:right-12 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-cyber/15 to-transparent"
+    aria-hidden="true"
+  ></div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+      <!-- Left: label column -->
+      <div class="lg:col-span-3">
+        <div class="sticky top-24">
+          <span class="section-label">What I Build</span>
+          <div class="mt-3 w-12 h-px bg-gold/40"></div>
+        </div>
+      </div>
+
+      <!-- Right: content -->
+      <div class="lg:col-span-9">
+
+        <!-- Lead statement -->
+        <h2
+          class="font-heading font-700 text-slate-100 mb-8 leading-tight"
+          style="font-size: clamp(1.75rem, 3.5vw, 3rem); letter-spacing: -0.02em;"
+        >
+          Enterprise technology leaders hire me when they need
+          <span class="text-gradient-gold">transformation that actually ships</span>
+          — not a roadmap that expires.
+        </h2>
+
+        <!-- Body paragraphs -->
+        <div class="space-y-6 font-body text-slate-400" style="font-size: 1.0625rem; line-height: 1.75;">
+          <p>
+            I design and build Dark Factories: fully autonomous, AI-orchestrated
+            operational pipelines where the system handles every step from task
+            intake to artifact delivery. No human operators in the loop. No
+            bottlenecks. No sprint theater.
+          </p>
+          <p>
+            My current flagship — <span class="text-slate-200 font-600">The Sovereign Council</span> — is a live
+            operational system running thirteen specialized AI agents across
+            strategy, venture architecture, legal compliance, financial intelligence,
+            and digital build execution. It is not a demo. It is my primary
+            operating infrastructure.
+          </p>
+          <p>
+            If your organization is serious about AI transformation — not
+            exploration, not pilot programs, not proof-of-concept theater — I
+            am the architect who builds the real thing.
+          </p>
+        </div>
+
+        <!-- Capability cards -->
+        <div class="mt-12 grid sm:grid-cols-2 gap-4">
+          {
+            [
+              {
+                title: "Dark Factory Design",
+                desc: "End-to-end autonomous pipeline architecture. Zero human operator touchpoints between spec and delivery.",
+                icon: "⬡",
+              },
+              {
+                title: "AI Transformation Advisory",
+                desc: "$1,000/hr strategy engagement for CTO, VP Engineering, and Head of AI at F500 and high-growth organizations.",
+                icon: "◈",
+              },
+              {
+                title: "Systems Engineering",
+                desc: "15+ years principal-level. Azure · Claude · Python · LangFlow · Semantic Kernel. Hands on, not just hands waving.",
+                icon: "⬢",
+              },
+              {
+                title: "Speaking & Panels",
+                desc: "Available for conferences, keynotes, and panels on autonomous systems, AI architecture, and the future of work.",
+                icon: "◉",
+              },
+            ].map((card) => (
+              <div class="gold-border-hover p-6 group">
+                <div class="text-gold/60 font-mono text-xl mb-3 group-hover:text-gold transition-colors duration-200">
+                  {card.icon}
+                </div>
+                <h3 class="font-heading font-600 text-slate-100 text-sm tracking-wide mb-2">
+                  {card.title}
+                </h3>
+                <p class="font-body text-slate-500 text-sm leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

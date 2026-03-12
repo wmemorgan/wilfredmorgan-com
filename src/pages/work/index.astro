@@ -1,0 +1,137 @@
+---
+// src/pages/work/index.astro
+// wilfredmorgan.com — Work Page
+// STATUS: Scaffolded — Phase 2 will populate case studies
+// SDS Build: WM_WorkPage_2026-03-11_v1
+
+import PageLayout from "../../layouts/PageLayout.astro";
+
+const projects = [
+  {
+    id: "sovereign-council",
+    title: "The Sovereign Council",
+    category: "Dark Factory · AI Architecture",
+    status: "LIVE",
+    year: "2025–Present",
+    summary:
+      "Principal Architect and systems engineer for a 13-agent, multi-tier AI orchestration system operating across strategy, legal, venture, financial intelligence, and digital build execution. L4–L5 Dark Factory maturity. Zero human operator touchpoints between task and delivery.",
+    metrics: ["13 specialized agents", "5 operational domains", "0 operator touchpoints"],
+    flagship: true,
+  },
+  {
+    id: "enterprise-ai-transformation",
+    title: "Enterprise AI Transformation",
+    category: "Advisory · Architecture",
+    status: "CASE STUDY",
+    year: "2024",
+    summary:
+      "Anonymized F500 engagement. Compressed 18-month enterprise AI transformation roadmap into a 90-day execution plan. Delivered autonomous pipeline architecture reducing manual workflow overhead by over 70%.",
+    metrics: ["90-day delivery", "70%+ overhead reduction", "Principal-led"],
+    flagship: false,
+  },
+  {
+    id: "dark-factory-methodology",
+    title: "Dark Factory Methodology",
+    category: "Systems Design · Whitepaper",
+    status: "PUBLISHED",
+    year: "2025",
+    summary:
+      "Proprietary framework for designing autonomous, AI-orchestrated operational pipelines at L4–L5 maturity. Documents the architecture, agent taxonomy, and deployment protocols for zero-touchpoint delivery systems.",
+    metrics: ["L4–L5 maturity", "Full taxonomy", "Deployment protocols"],
+    flagship: false,
+  },
+];
+---
+
+<PageLayout
+  title="Architecture Work — Wilfred Morgan"
+  description="Project archive and case studies from Wilfred Morgan — Principal Architect and AI systems engineer."
+>
+  <section class="py-24 lg:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+      <!-- Page header -->
+      <div class="grid lg:grid-cols-12 gap-8 mb-16">
+        <div class="lg:col-span-3">
+          <span class="section-label">Work</span>
+          <div class="mt-3 w-12 h-px bg-gold/40"></div>
+        </div>
+        <div class="lg:col-span-9">
+          <h1
+            class="font-heading font-800 text-slate-100 leading-tight mb-4"
+            style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.03em;"
+          >
+            Authority Archive
+          </h1>
+          <p class="font-body text-slate-400 max-w-xl" style="font-size: 1.0625rem; line-height: 1.75;">
+            Selected architecture work, case studies, and deployed systems. All
+            enterprise engagements are anonymized. Metrics are real.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project grid -->
+      <div class="grid lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-3"></div>
+        <div class="lg:col-span-9 space-y-4">
+          {
+            projects.map((project) => (
+              <article
+                class:list={[
+                  "gold-border-hover p-8 group transition-all duration-300",
+                  project.flagship ? "border-gold/30" : "",
+                ]}
+              >
+                <!-- Header -->
+                <div class="flex items-start justify-between gap-4 mb-4">
+                  <div class="flex items-center gap-3">
+                    <span
+                      class:list={[
+                        "font-mono text-xs px-2 py-0.5 tracking-widest border",
+                        project.status === "LIVE"
+                          ? "border-emerald-500/30 text-emerald-400/80"
+                          : project.status === "PUBLISHED"
+                            ? "border-cyber/30 text-cyber/70"
+                            : "border-gold/20 text-gold/60",
+                      ]}
+                    >
+                      {project.status}
+                    </span>
+                    {project.flagship && (
+                      <span class="font-mono text-xs text-gold/60 tracking-wider">
+                        FLAGSHIP
+                      </span>
+                    )}
+                  </div>
+                  <span class="font-mono text-xs text-slate-600">{project.year}</span>
+                </div>
+
+                <!-- Title -->
+                <h2 class="font-heading font-700 text-slate-100 text-xl mb-1">
+                  {project.title}
+                </h2>
+                <p class="font-mono text-xs text-slate-500 tracking-wider mb-4">
+                  {project.category}
+                </p>
+
+                <!-- Summary -->
+                <p class="font-body text-slate-400 text-sm leading-relaxed mb-5">
+                  {project.summary}
+                </p>
+
+                <!-- Metrics -->
+                <div class="flex flex-wrap gap-2">
+                  {project.metrics.map((m) => (
+                    <span class="font-mono text-xs px-3 py-1 border border-white/5 text-slate-500 group-hover:border-gold/10 transition-colors duration-200">
+                      {m}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>
