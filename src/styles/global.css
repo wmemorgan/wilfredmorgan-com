@@ -25,6 +25,11 @@
     color: #f1f5f9;
   }
 
+  :focus-visible {
+    outline: 2px solid #D4AF37;
+    outline-offset: 2px;
+  }
+
   ::selection {
     background: rgba(212, 175, 55, 0.25);
     color: #f1f5f9;
@@ -92,7 +97,7 @@
   }
 
   .section-label {
-    @apply font-mono text-xs text-gold/70 tracking-[0.25em] uppercase;
+    @apply font-mono text-xs text-gold tracking-[0.25em] uppercase;
   }
 
   .animate-delay-100 {

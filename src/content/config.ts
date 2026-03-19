@@ -9,6 +9,10 @@ const writing = defineCollection({
     readTime: z.string(),
     category: z.string(),
     draft: z.boolean().default(false),
+    tags: z.array(z.string()).optional(),
+    seoTitle: z.string().optional(),
+    ogImage: z.string().optional(),
+    canonicalUrl: z.string().optional(),
   }),
 });
 

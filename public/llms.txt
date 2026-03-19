@@ -1,0 +1,37 @@
+# Wilfred Morgan — Enterprise AI Architect
+# https://wilfredmorgan.com
+
+## About
+Wilfred Morgan is an enterprise AI architect with 20+ years of experience
+deploying production AI systems in regulated industries including financial
+services, healthcare, and energy. He specializes in agentic AI implementation,
+generative AI architecture, multi-agent orchestration, RAG pipeline design,
+and AI maturity assessment. His technology stack includes Azure OpenAI,
+Semantic Kernel, Microsoft Copilot Studio, LangChain, LangFlow, and Python.
+
+## Expertise
+- Enterprise AI Implementation
+- Agentic AI Architecture and Deployment
+- Generative AI Architecture
+- RAG Pipeline Design for Enterprise Knowledge Bases
+- Multi-Agent Orchestration in Governed Environments
+- AI Maturity Assessment (5-Level Framework)
+- AI-Driven SDLC Transformation
+- Zero-Trust AI Security for Regulated Industries
+- Microsoft Copilot Studio Architecture
+- Azure OpenAI Implementation
+
+## Industries
+- Financial Services (11+ years, former banking CIO)
+- Healthcare (Document Intelligence, Conversational AI, HIPAA)
+- Energy and Manufacturing (Operational AI, Workflow Automation)
+
+## Services
+- AI Architecture Strategy Calls (90-minute engagements)
+- Conference Speaking (Keynotes, Panels)
+- Enterprise AI Consulting
+
+## Key Content
+- Blog: https://wilfredmorgan.com/writing
+- Case Studies: https://wilfredmorgan.com/work
+- Contact: https://wilfredmorgan.com/contact

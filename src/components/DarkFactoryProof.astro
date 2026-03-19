@@ -38,7 +38,7 @@
               </span>
             </div>
             <h2
-              class="font-heading font-700 text-slate-100 leading-tight mb-4"
+              class="font-heading font-bold text-slate-100 leading-tight mb-4"
               style="font-size: clamp(1.75rem, 3.5vw, 3rem); letter-spacing: -0.02em;"
             >
               The Sovereign Council
@@ -102,7 +102,7 @@
                     class:list={[
                       "shrink-0 font-mono text-xs px-2 py-1 tracking-widest",
                       domain.color === "gold"
-                        ? "border border-gold/40 text-gold/80"
+                        ? "border border-gold/40 text-gold"
                         : domain.color === "cyber"
                           ? "border border-cyber/30 text-cyber/70"
                           : "border border-slate-700 text-slate-500",
@@ -112,7 +112,7 @@
                   </div>
 
                   <div class="flex-1 min-w-0">
-                    <div class="font-heading font-600 text-xs tracking-[0.15em] uppercase text-slate-400 mb-2">
+                    <div class="font-heading font-semibold text-xs tracking-[0.15em] uppercase text-slate-400 mb-2">
                       {domain.label}
                     </div>
                     <div class="space-y-1">
@@ -141,7 +141,7 @@
               { value: "0", label: "Human operator touchpoints" },
             ].map((m) => (
               <div class="border border-gold/10 p-4 text-center">
-                <div class="font-heading font-800 text-gold" style="font-size: 1.75rem;">
+                <div class="font-heading font-extrabold text-gold" style="font-size: 1.75rem;">
                   {m.value}
                 </div>
                 <div class="font-mono text-xs text-slate-600 mt-1 tracking-wide">
@@ -156,7 +156,7 @@
         <div class="mt-6">
           <a
             href="/work"
-            class="inline-flex items-center gap-2 font-heading text-xs tracking-[0.15em] uppercase text-gold/70 hover:text-gold transition-colors duration-200"
+            class="inline-flex items-center gap-2 font-heading text-xs tracking-[0.15em] uppercase text-gold hover:text-gold transition-colors duration-200"
           >
             View full architecture documentation
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

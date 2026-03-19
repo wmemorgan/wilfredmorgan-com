@@ -17,18 +17,42 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How can enterprise AI transformation be completed in 90 days instead of 18 months?",
+      "name": "What does an agentic AI architect do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "By deploying a Dark Factory architecture — a fully autonomous, AI-orchestrated operational pipeline that compresses manual workflow overhead. This approach replaces sequential human-dependent processes with multi-agent systems operating at L4–L5 maturity, eliminating handoff delays and reducing cycle time by 70% or more."
+        "text": "An agentic AI architect designs, builds, and deploys autonomous AI agent systems that operate within enterprise environments. This includes architecting multi-agent orchestration frameworks, designing RAG pipelines for enterprise knowledge bases, implementing LLM-powered workflows with tools like Azure OpenAI and Semantic Kernel, and ensuring production deployments meet security, compliance, and governance requirements in regulated industries like healthcare and financial services."
       }
     },
     {
       "@type": "Question",
-      "name": "What is a Dark Factory in enterprise AI?",
+      "name": "How to deploy AI agents in enterprise environments?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Dark Factory is a fully autonomous, AI-orchestrated operational pipeline with zero human operator touchpoints between task intake and artifact delivery. Named after the manufacturing concept of 'lights-out' factories, Dark Factories in AI architecture use multi-agent systems to handle complete operational domains autonomously."
+        "text": "Enterprise AI agent deployment requires a production-first architecture approach: define agent scope and governance boundaries, implement RAG pipelines connecting to enterprise knowledge bases, deploy using managed identity and zero-trust security patterns, integrate with existing enterprise systems through API gateways, and establish observability and audit trails. Organizations that follow an AI maturity model and invest in specification-driven development consistently achieve faster time-to-production than those that start with experimentation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is an AI maturity assessment framework?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI maturity assessment framework evaluates an organization's readiness to implement and scale AI systems across five levels: Level 1 (Manual/Ad-Hoc), Level 2 (Assisted — AI copilots augmenting individual tasks), Level 3 (Automated — AI agents handling defined workflows), Level 4 (Autonomous — multi-agent systems operating with minimal human oversight), and Level 5 (Dark Factory — fully autonomous, AI-orchestrated operational pipelines with zero human touchpoints). Research from MIT indicates that 95% of organizations investing in generative AI see zero measurable ROI, typically because they stall at Level 1-2 without a structured maturity path."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can enterprise AI transformation be completed in 90 days instead of 18 months?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By deploying a production-ready AI architecture using specification-driven development, multi-agent orchestration frameworks like Semantic Kernel, and pre-built integration patterns for enterprise systems. The key is replacing sequential human-dependent processes with autonomous AI agent pipelines operating at Level 4-5 maturity, eliminating handoff delays, and using AI-driven code generation to compress the SDLC cycle time by 70% or more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What certifications do you need for enterprise AI roles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enterprise AI architect roles typically require a combination of cloud platform certifications and practical production experience. Key certifications include Azure Solutions Architect Expert (AZ-305), Azure AI Engineer Associate (AI-102), and platform-specific credentials for Microsoft Copilot Studio or similar tools. However, certifications alone are insufficient — the market values architects who combine strategic consulting experience with hands-on AI agent deployment in production environments, particularly in regulated industries where governance and compliance are non-negotiable."
       }
     }
   ]
@@ -36,8 +60,8 @@ const faqSchema = {
 ---
 
 <PageLayout
-  title="Wilfred Morgan — The Nexus Architect"
-  description="Principal Architect and AI systems engineer building Dark Factories — fully autonomous, AI-orchestrated operational pipelines that compress 18 months of enterprise transformation into 90 days."
+  title="Wilfred Morgan — Enterprise AI Architect | Agentic AI Implementation & Generative AI Architecture"
+  description="Wilfred Morgan is an enterprise AI architect who deploys production agentic AI systems in regulated industries. Specializing in generative AI architecture, RAG pipelines, multi-agent orchestration, and AI-driven SDLC transformation. From concept to production in days, not months."
   extraJsonLd={[faqSchema]}
 >
   <Hero />

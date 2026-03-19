@@ -48,18 +48,24 @@
       <!-- Section label -->
       <div class="flex items-center gap-3 mb-8 animate-fade-up opacity-0 animate-delay-100">
         <span class="inline-block w-8 h-px bg-gold/60"></span>
-        <span class="section-label">Principal Architect · AI Systems Engineer</span>
+        <span class="section-label">Enterprise AI Architect · Agentic AI Implementation</span>
       </div>
 
-      <!-- Name -->
-      <h1
-        class="font-heading font-900 text-slate-100 mb-4 animate-fade-up opacity-0 animate-delay-200"
+      <!-- SEO H1 (visually hidden, crawlable) -->
+      <h1 class="sr-only">
+        Wilfred Morgan — Enterprise AI Architect specializing in Agentic AI Implementation & Generative AI Architecture
+      </h1>
+
+      <!-- Visual name display -->
+      <p
+        class="font-heading font-black text-slate-100 mb-4 animate-fade-up opacity-0 animate-delay-200"
         style="font-size: clamp(3.5rem, 8vw, 7rem); line-height: 1; letter-spacing: -0.03em;"
+        aria-hidden="true"
       >
         Wilfred
         <br />
         <span class="text-gradient-gold">Morgan</span>
-      </h1>
+      </p>
 
       <!-- Positioning line — punchy, commanding -->
       <div class="mb-10 animate-fade-up opacity-0 animate-delay-300">
@@ -67,11 +73,10 @@
           class="font-body text-slate-300 max-w-2xl"
           style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 1.5;"
         >
-          I build{" "}
-          <span class="text-gold font-600">Dark Factories</span> — autonomous,
-          AI-orchestrated pipelines that compress 18 months of enterprise
-          transformation into 90 days. No human operators between task and
-          delivery.
+          Enterprise AI architect specializing in{" "}
+          <span class="text-gold font-semibold">agentic AI deployment</span>,
+          generative AI architecture, and multi-agent orchestration for regulated
+          industries. From concept to production in days.
         </p>
       </div>
 
@@ -106,13 +111,13 @@
       >
         {
           [
-            { value: "15+", label: "Years principal-level" },
+            { value: "20+", label: "Years enterprise systems" },
             { value: "L4–L5", label: "Dark Factory maturity" },
             { value: "90 days", label: "Enterprise transformation" },
           ].map((stat) => (
             <div>
               <div
-                class="font-heading font-800 text-gold"
+                class="font-heading font-extrabold text-gold"
                 style="font-size: clamp(1.5rem, 3vw, 2.25rem);"
               >
                 {stat.value}

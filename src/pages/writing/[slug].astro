@@ -23,15 +23,21 @@ const articleSchema = {
   "headline": article.data.title,
   "description": article.data.excerpt,
   "datePublished": article.data.date,
+  "dateModified": article.data.date,
   "author": {
     "@type": "Person",
     "name": "Wilfred Morgan",
-    "url": "https://wilfredmorgan.com"
+    "url": "https://wilfredmorgan.com",
+    "jobTitle": "Enterprise AI Architect"
   },
   "publisher": {
     "@type": "Person",
     "name": "Wilfred Morgan",
     "url": "https://wilfredmorgan.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://wilfredmorgan.com/writing/${article.slug}`
   }
 };
 
@@ -91,11 +97,20 @@ const breadcrumbSchema = {
         <!-- Article content -->
         <div class="lg:col-span-9">
           <h1
-            class="font-heading font-800 text-slate-100 leading-tight mb-6"
+            class="font-heading font-extrabold text-slate-100 leading-tight mb-6"
             style="font-size: clamp(1.75rem, 3.5vw, 3rem); letter-spacing: -0.02em;"
           >
             {article.data.title}
           </h1>
+          {article.data.tags && (
+            <div class="flex flex-wrap gap-2 mb-6">
+              {article.data.tags.map((tag: string) => (
+                <span class="font-mono text-xs text-gold border border-gold/15 px-2 py-0.5 tracking-wider">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
           <p class="font-body text-slate-400 text-lg leading-relaxed mb-10 border-l-2 border-gold/30 pl-5 italic">
             {article.data.excerpt}
           </p>
@@ -175,11 +190,11 @@ const breadcrumbSchema = {
           <div class="mt-16 pt-8 border-t border-gold/10">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div>
-                <p class="font-heading font-600 text-slate-200 text-sm mb-1">
+                <p class="font-heading font-semibold text-slate-200 text-sm mb-1">
                   Wilfred Morgan
                 </p>
                 <p class="font-mono text-xs text-slate-500 tracking-wider">
-                  Principal Architect · AI Systems Engineer
+                  Enterprise AI Architect · Agentic AI Implementation
                 </p>
               </div>
               <a href="/contact" class="btn-gold text-sm">

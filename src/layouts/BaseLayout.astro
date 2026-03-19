@@ -62,24 +62,54 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       "@type": "Person",
       "name": "Wilfred Morgan",
       "url": "https://wilfredmorgan.com",
-      "jobTitle": "Principal Architect",
-      "description": "Principal Architect and AI systems engineer. Builder of Dark Factories — fully autonomous, AI-orchestrated operational pipelines.",
+      "jobTitle": "Enterprise AI Architect",
+      "description": "Enterprise AI architect and agentic AI implementation specialist with 20+ years of experience deploying production AI systems in regulated industries. Expert in generative AI architecture, multi-agent orchestration, RAG pipelines, Azure OpenAI, Semantic Kernel, and AI-driven SDLC transformation.",
       "knowsAbout": [
-        "AI Systems Architecture",
-        "Dark Factory Design",
-        "Enterprise AI Transformation",
-        "Multi-Agent Systems",
-        "Autonomous Operations",
-        "LangFlow",
+        "Enterprise AI Implementation",
+        "Agentic AI Architecture",
+        "Generative AI Architecture",
+        "Multi-Agent Orchestration",
+        "RAG Pipeline Design",
+        "Azure OpenAI",
         "Semantic Kernel",
-        "Azure",
-        "Python"
+        "Microsoft Copilot Studio",
+        "LLM Orchestration",
+        "AI Maturity Assessment",
+        "AI-Driven SDLC Transformation",
+        "Healthcare AI Architecture",
+        "Financial Services AI",
+        "Zero-Trust AI Security",
+        "Dark Factory Design",
+        "Python AI Pipeline Development",
+        "LangChain",
+        "LangFlow"
       ],
-      "sameAs": [],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)",
+          "credentialCategory": "Professional Certification"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Microsoft LEAP Alumni",
+          "credentialCategory": "Professional Program"
+        }
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Enterprise AI Architect",
+        "occupationalCategory": "15-1299.09",
+        "skills": "Agentic AI deployment, generative AI architecture, RAG pipeline design, multi-agent orchestration, enterprise AI implementation, AI maturity assessment, Azure OpenAI, Semantic Kernel, Microsoft Copilot Studio"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/wilfredmorgan/"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "info@wilfredmorgan.com",
-        "contactType": "Business Inquiries"
+        "contactType": "Business Inquiries",
+        "url": "https://wilfredmorgan.com/contact"
       }
     })} />
 
@@ -87,12 +117,48 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Wilfred Morgan",
+      "name": "Wilfred Morgan — Enterprise AI Architect",
       "url": "https://wilfredmorgan.com",
-      "description": "Principal Architect and AI systems engineer building Dark Factories — autonomous AI delivery pipelines for enterprise teams.",
+      "description": "Enterprise AI architecture consulting, agentic AI implementation, and thought leadership from Wilfred Morgan — production AI deployment for regulated industries.",
       "author": {
         "@type": "Person",
+        "name": "Wilfred Morgan",
+        "url": "https://wilfredmorgan.com"
+      }
+    })} />
+
+    <!-- ProfessionalService Schema (AEO) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Wilfred Morgan — Enterprise AI Consulting",
+      "url": "https://wilfredmorgan.com",
+      "description": "Enterprise AI architecture consulting specializing in agentic AI implementation, RAG pipeline design, AI maturity assessment, and generative AI architecture for regulated industries.",
+      "provider": {
+        "@type": "Person",
         "name": "Wilfred Morgan"
+      },
+      "serviceType": [
+        "AI Architecture Consulting",
+        "Agentic AI Implementation",
+        "RAG Pipeline Design",
+        "AI Maturity Assessment",
+        "Enterprise AI Governance"
+      ],
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Consulting Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Architecture Strategy Call",
+              "description": "90-minute engagement for CTO, VP Engineering, and Head of AI to assess AI maturity and define implementation roadmap."
+            }
+          }
+        ]
       }
     })} />
 

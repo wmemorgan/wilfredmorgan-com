@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# AI crawlers — explicit allow for AEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://wilfredmorgan.com/sitemap-index.xml

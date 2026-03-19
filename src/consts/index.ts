@@ -1,8 +1,8 @@
 export const SITE = {
   name: "Wilfred Morgan",
-  title: "Wilfred Morgan — Principal Architect & AI Engineer",
+  title: "Wilfred Morgan — Enterprise AI Architect | Agentic AI & Generative AI Implementation",
   description:
-    "Principal Architect and AI systems engineer building Dark Factories — autonomous AI delivery pipelines for enterprise teams. Consultant. Speaker. Builder.",
+    "Wilfred Morgan is an enterprise AI architect specializing in agentic AI implementation, generative AI architecture, and production AI agent deployment for regulated industries. 20+ years building enterprise systems. Azure OpenAI, Semantic Kernel, multi-agent orchestration.",
   url: "https://wilfredmorgan.com",
   ogImage: "/og-default.png",
   navLinks: [
@@ -18,16 +18,19 @@ export const SITE = {
 };
 
 export const TECH_STACK = [
-  { label: "Azure", category: "cloud" },
-  { label: "Claude AI", category: "ai" },
-  { label: "Python", category: "lang" },
-  { label: "LangFlow", category: "ai" },
+  { label: "Azure OpenAI", category: "ai" },
   { label: "Semantic Kernel", category: "ai" },
+  { label: "Microsoft Copilot Studio", category: "ai" },
+  { label: "LangFlow", category: "ai" },
+  { label: "LangChain", category: "ai" },
+  { label: "Python", category: "lang" },
+  { label: "C# / .NET", category: "lang" },
+  { label: "Claude AI", category: "ai" },
+  { label: "RAG Pipelines", category: "ai" },
   { label: "Cursor", category: "tooling" },
   { label: "Astro", category: "web" },
   { label: "React", category: "web" },
   { label: "TypeScript", category: "lang" },
   { label: "Tailwind CSS", category: "web" },
-  { label: "Node.js", category: "runtime" },
   { label: "FastAPI", category: "backend" },
 ];
