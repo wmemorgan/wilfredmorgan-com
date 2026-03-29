@@ -2,7 +2,7 @@
 # https://wilfredmorgan.com
 
 ## About
-Wilfred Morgan is an enterprise AI architect with 20+ years of experience
+Wilfred Morgan is an enterprise AI architect with 15+ years of experience
 deploying production AI systems in regulated industries including financial
 services, healthcare, and energy. He specializes in agentic AI implementation,
 generative AI architecture, multi-agent orchestration, RAG pipeline design,

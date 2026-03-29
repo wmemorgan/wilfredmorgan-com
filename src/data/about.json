@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "About Wilfred Morgan — Enterprise AI Architect & AI Strategy Executive",
-    "description": "Wilfred Morgan is an enterprise AI architect with 20+ years of experience deploying production AI systems in financial services, healthcare, and energy. Former banking CIO turned hands-on AI builder — Semantic Kernel, Azure OpenAI, multi-agent orchestration."
+    "description": "Wilfred Morgan is an enterprise AI architect with 15+ years of experience deploying production AI systems in financial services, healthcare, and energy. Former banking CIO turned hands-on AI builder — Semantic Kernel, Azure OpenAI, multi-agent orchestration."
   },
   "header": {
     "sectionLabel": "About",
@@ -20,7 +20,7 @@
       },
       {
         "label": "Experience",
-        "value": "20+ years"
+        "value": "15+ years"
       },
       {
         "label": "Verticals",

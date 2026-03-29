@@ -2,7 +2,7 @@ export const SITE = {
   name: "Wilfred Morgan",
   title: "Wilfred Morgan — Enterprise AI Architect | Agentic AI & Generative AI Implementation",
   description:
-    "Wilfred Morgan is an enterprise AI architect specializing in agentic AI implementation, generative AI architecture, and production AI agent deployment for regulated industries. 20+ years building enterprise systems. Azure OpenAI, Semantic Kernel, multi-agent orchestration.",
+    "Wilfred Morgan is an enterprise AI architect specializing in agentic AI implementation, generative AI architecture, and production AI agent deployment for regulated industries. 15+ years building enterprise systems. Azure OpenAI, Semantic Kernel, multi-agent orchestration.",
   url: "https://wilfredmorgan.com",
   ogImage: "/og-default.png",
   navLinks: [
