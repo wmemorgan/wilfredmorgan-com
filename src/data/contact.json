@@ -1,0 +1,46 @@
+{
+  "meta": {
+    "title": "Book an AI Strategy Call — Wilfred Morgan | Enterprise AI Architecture Consulting",
+    "description": "Book a strategy call with Wilfred Morgan for enterprise AI architecture consulting, AI maturity assessments, and agentic AI implementation planning. For CTO, VP Engineering, and Head of AI."
+  },
+  "header": {
+    "sectionLabel": "Contact",
+    "headline": "Book a Strategy Call",
+    "description": "Calls are reserved for CTO, VP Engineering, and Head of AI at organizations ready to move from exploration to execution. Bring a real problem. Leave with a real plan."
+  },
+  "options": [
+    {
+      "type": "Strategy Call",
+      "description": "90-minute architecture engagement. CTO / VP Engineering / Head of AI. Limited availability. Engagement terms discussed on inquiry.",
+      "cta": "Schedule on Calendly",
+      "href": "https://calendly.com/wilfred-morgan/",
+      "external": true,
+      "primary": true
+    },
+    {
+      "type": "Speaking & Consulting Inquiries",
+      "description": "Conferences, keynotes, panels, and paid consulting engagements. Autonomous systems · AI transformation · Dark Factory methodology.",
+      "cta": "Send inquiry",
+      "href": "mailto:info@wilfredmorgan.com",
+      "external": false,
+      "primary": false
+    }
+  ],
+  "qualifier": {
+    "headline": "Who this call is for",
+    "items": [
+      "CTO or VP Engineering at an F500 or high-growth company",
+      "Head of AI at an organization past the pilot stage",
+      "Leaders with a real transformation problem — not an exploration budget",
+      "Organizations ready to act on a 90-day plan"
+    ]
+  },
+  "directContact": {
+    "email": "info@wilfredmorgan.com",
+    "note": "Speaking & consulting inquiry email"
+  },
+  "calendly": {
+    "url": "https://calendly.com/wilfred-morgan/",
+    "_note": "Calendly embed URL — append ?hide_gdpr_banner=1&background_color=0f172a&text_color=f1f5f9&primary_color=d4af37 for styled embed"
+  }
+}

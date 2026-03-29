@@ -1,6 +1,10 @@
 ---
 // AuthorityStatement.astro
 // What Wilfred builds and why it matters to the visitor
+import homepageData from "../data/homepage.json";
+const { authorityStatement } = homepageData;
+const headlineParts = authorityStatement.headline.split(authorityStatement.headlineHighlight);
+const p2parts = authorityStatement.paragraphs[1].split(authorityStatement.flagshipHighlight);
 ---
 
 <section
@@ -19,7 +23,7 @@
       <!-- Left: label column -->
       <div class="lg:col-span-3">
         <div class="sticky top-24">
-          <span class="section-label">What I Build</span>
+          <span class="section-label">{authorityStatement.sectionLabel}</span>
           <div class="mt-3 w-12 h-px bg-gold/40"></div>
         </div>
       </div>
@@ -32,67 +36,35 @@
           class="font-heading font-bold text-slate-100 mb-8 leading-tight"
           style="font-size: clamp(1.75rem, 3.5vw, 3rem); letter-spacing: -0.02em;"
         >
-          Enterprise technology leaders hire me when they need
-          <span class="text-gradient-gold">transformation that actually ships</span>
-          — not a roadmap that expires.
+          {headlineParts[0]}<span class="text-gradient-gold">{authorityStatement.headlineHighlight}</span>{headlineParts[1]}
         </h2>
 
         <!-- Body paragraphs -->
         <div class="space-y-6 font-body text-slate-400" style="font-size: 1.0625rem; line-height: 1.75;">
-          <p>
-            I design and deploy enterprise AI systems — multi-agent architectures
-            and agentic AI pipelines that compress 18 months of AI transformation
-            into 90 days. No human operators between task intake and delivery.
-            The industry calls them Dark Factories.
-          </p>
-          <p>
-            My current flagship — <span class="text-slate-200 font-semibold">The Sovereign Council</span> — is a live
-            operational system running thirteen specialized AI agents across
-            strategy, venture architecture, legal compliance, financial intelligence,
-            and digital build execution. It is not a demo. It is my primary
-            operating infrastructure.
-          </p>
-          <p>
-            If your organization is serious about AI transformation — not
-            exploration, not pilot programs, not proof-of-concept theater — I
-            am the architect who builds the real thing.
-          </p>
+          {authorityStatement.paragraphs.map((para, idx) =>
+            idx === 1 ? (
+              <p>
+                {p2parts[0]}<span class="text-slate-200 font-semibold">{authorityStatement.flagshipHighlight}</span>{p2parts[1]}
+              </p>
+            ) : (
+              <p>{para}</p>
+            )
+          )}
         </div>
 
         <!-- Capability cards -->
         <div class="mt-12 grid sm:grid-cols-2 gap-4">
           {
-            [
-              {
-                title: "Dark Factory Design",
-                desc: "End-to-end autonomous pipeline architecture. Zero human operator touchpoints between spec and delivery.",
-                icon: "⬡",
-              },
-              {
-                title: "AI Transformation Advisory",
-                desc: "Selective strategy engagements for CTO, VP Engineering, and Head of AI at F500 and high-growth organizations. Inquiry-only.",
-                icon: "◈",
-              },
-              {
-                title: "Systems Engineering",
-                desc: "20+ years enterprise-level. Azure OpenAI · Semantic Kernel · Python · LangFlow · LangChain. Hands on, not just hands waving.",
-                icon: "⬢",
-              },
-              {
-                title: "Speaking & Panels",
-                desc: "Available for conferences, keynotes, and panels on autonomous systems, AI architecture, and the future of work.",
-                icon: "◉",
-              },
-            ].map((card) => (
+            authorityStatement.capabilities.map((cap) => (
               <div class="gold-border-hover p-6 group">
                 <div class="text-gold font-mono text-xl mb-3 group-hover:text-gold transition-colors duration-200">
-                  {card.icon}
+                  {cap.icon}
                 </div>
                 <h3 class="font-heading font-semibold text-slate-100 text-sm tracking-wide mb-2">
-                  {card.title}
+                  {cap.title}
                 </h3>
                 <p class="font-body text-slate-500 text-sm leading-relaxed">
-                  {card.desc}
+                  {cap.description}
                 </p>
               </div>
             ))

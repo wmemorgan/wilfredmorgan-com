@@ -1,6 +1,78 @@
 ---
 import "../styles/global.css";
 import { SITE } from "../consts/index";
+import sharedData from "../data/shared.json";
+const { seo } = sharedData;
+
+// Build JSON-LD schema objects from data layer
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": seo.personSchema.name,
+  "url": seo.personSchema.url,
+  "jobTitle": seo.personSchema.jobTitle,
+  "description": seo.personSchema.description,
+  "knowsAbout": seo.personSchema.knowsAbout,
+  "hasCredential": seo.personSchema.credentials.map((c: { name: string; category: string }) => ({
+    "@type": "EducationalOccupationalCredential",
+    "name": c.name,
+    "credentialCategory": c.category
+  })),
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": seo.personSchema.occupation.name,
+    "occupationalCategory": seo.personSchema.occupation.category,
+    "skills": seo.personSchema.occupation.skills
+  },
+  "sameAs": seo.personSchema.sameAs,
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": seo.personSchema.contactPoint.email,
+    "contactType": seo.personSchema.contactPoint.contactType,
+    "url": seo.personSchema.contactPoint.url
+  }
+};
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": seo.webSiteSchema.name,
+  "url": seo.webSiteSchema.url,
+  "description": seo.webSiteSchema.description,
+  "author": {
+    "@type": "Person",
+    "name": seo.personSchema.name,
+    "url": seo.personSchema.url
+  }
+};
+
+const professionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": seo.professionalServiceSchema.name,
+  "url": seo.professionalServiceSchema.url,
+  "description": seo.professionalServiceSchema.description,
+  "provider": {
+    "@type": "Person",
+    "name": seo.personSchema.name
+  },
+  "serviceType": seo.professionalServiceSchema.serviceTypes,
+  "areaServed": seo.professionalServiceSchema.areaServed,
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI Consulting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": seo.professionalServiceSchema.strategyCallOffer.name,
+          "description": seo.professionalServiceSchema.strategyCallOffer.description
+        }
+      }
+    ]
+  }
+};
 
 interface Props {
   title?: string;
@@ -60,110 +132,13 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="generator" content={Astro.generator} />
 
     <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Wilfred Morgan",
-      "url": "https://wilfredmorgan.com",
-      "jobTitle": "Enterprise AI Architect",
-      "description": "Enterprise AI architect and agentic AI implementation specialist with 20+ years of experience deploying production AI systems in regulated industries. Expert in generative AI architecture, multi-agent orchestration, RAG pipelines, Azure OpenAI, Semantic Kernel, and AI-driven SDLC transformation.",
-      "knowsAbout": [
-        "Enterprise AI Implementation",
-        "Agentic AI Architecture",
-        "Generative AI Architecture",
-        "Multi-Agent Orchestration",
-        "RAG Pipeline Design",
-        "Azure OpenAI",
-        "Semantic Kernel",
-        "Microsoft Copilot Studio",
-        "LLM Orchestration",
-        "AI Maturity Assessment",
-        "AI-Driven SDLC Transformation",
-        "Healthcare AI Architecture",
-        "Financial Services AI",
-        "Zero-Trust AI Security",
-        "Dark Factory Design",
-        "Python AI Pipeline Development",
-        "LangChain",
-        "LangFlow"
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)",
-          "credentialCategory": "Professional Certification"
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "Microsoft LEAP Alumni",
-          "credentialCategory": "Professional Program"
-        }
-      ],
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Enterprise AI Architect",
-        "occupationalCategory": "15-1299.09",
-        "skills": "Agentic AI deployment, generative AI architecture, RAG pipeline design, multi-agent orchestration, enterprise AI implementation, AI maturity assessment, Azure OpenAI, Semantic Kernel, Microsoft Copilot Studio"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/wilfredmorgan/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "info@wilfredmorgan.com",
-        "contactType": "Business Inquiries",
-        "url": "https://wilfredmorgan.com/contact"
-      }
-    })} />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 
     <!-- WebSite Schema (AEO) -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Wilfred Morgan — Enterprise AI Architect",
-      "url": "https://wilfredmorgan.com",
-      "description": "Enterprise AI architecture consulting, agentic AI implementation, and thought leadership from Wilfred Morgan — production AI deployment for regulated industries.",
-      "author": {
-        "@type": "Person",
-        "name": "Wilfred Morgan",
-        "url": "https://wilfredmorgan.com"
-      }
-    })} />
+    <script type="application/ld+json" set:html={JSON.stringify(webSiteSchema)} />
 
     <!-- ProfessionalService Schema (AEO) -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Wilfred Morgan — Enterprise AI Consulting",
-      "url": "https://wilfredmorgan.com",
-      "description": "Enterprise AI architecture consulting specializing in agentic AI implementation, RAG pipeline design, AI maturity assessment, and generative AI architecture for regulated industries.",
-      "provider": {
-        "@type": "Person",
-        "name": "Wilfred Morgan"
-      },
-      "serviceType": [
-        "AI Architecture Consulting",
-        "Agentic AI Implementation",
-        "RAG Pipeline Design",
-        "AI Maturity Assessment",
-        "Enterprise AI Governance"
-      ],
-      "areaServed": "Worldwide",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "AI Consulting Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI Architecture Strategy Call",
-              "description": "90-minute engagement for CTO, VP Engineering, and Head of AI to assess AI maturity and define implementation roadmap."
-            }
-          }
-        ]
-      }
-    })} />
+    <script type="application/ld+json" set:html={JSON.stringify(professionalServiceSchema)} />
 
     <!-- Extra JSON-LD schemas -->
     {extraJsonLd.map((schema) => (

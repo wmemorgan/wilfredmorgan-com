@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "Wilfred Morgan — Enterprise AI Architect | Agentic AI Implementation & Generative AI Architecture",
+    "description": "Wilfred Morgan is an enterprise AI architect who deploys production agentic AI systems in regulated industries. Specializing in generative AI architecture, RAG pipelines, multi-agent orchestration, and AI-driven SDLC transformation. From concept to production in days, not months."
+  },
+  "hero": {
+    "sectionLabel": "Enterprise AI Architect · Agentic AI Implementation",
+    "seoTitle": "Wilfred Morgan — Enterprise AI Architect specializing in Agentic AI Implementation & Generative AI Architecture",
+    "name": {
+      "first": "Wilfred",
+      "last": "Morgan"
+    },
+    "positioning": "Enterprise AI architect specializing in agentic AI deployment, generative AI architecture, and multi-agent orchestration for regulated industries. From concept to production in days.",
+    "positioningHighlight": "agentic AI deployment",
+    "cta": {
+      "primary": {
+        "label": "Book a Strategy Call",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "View Architecture Work",
+        "href": "/work"
+      }
+    },
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Years enterprise systems"
+      },
+      {
+        "value": "L4–L5",
+        "label": "Dark Factory maturity"
+      },
+      {
+        "value": "90 days",
+        "label": "Enterprise transformation"
+      }
+    ],
+    "scrollIndicator": "SCROLL"
+  },
+  "authorityStatement": {
+    "sectionLabel": "What I Build",
+    "headline": "Enterprise technology leaders hire me when they need transformation that actually ships — not a roadmap that expires.",
+    "headlineHighlight": "transformation that actually ships",
+    "paragraphs": [
+      "I design and deploy enterprise AI systems — multi-agent architectures and agentic AI pipelines that compress 18 months of AI transformation into 90 days. No human operators between task intake and delivery. The industry calls them Dark Factories.",
+      "My current flagship — The Sovereign Council — is a live operational system running thirteen specialized AI agents across strategy, venture architecture, legal compliance, financial intelligence, and digital build execution. It is not a demo. It is my primary operating infrastructure.",
+      "If your organization is serious about AI transformation — not exploration, not pilot programs, not proof-of-concept theater — I am the architect who builds the real thing."
+    ],
+    "flagshipHighlight": "The Sovereign Council",
+    "capabilities": [
+      {
+        "icon": "⬡",
+        "title": "Dark Factory Design",
+        "description": "End-to-end autonomous pipeline architecture. Zero human operator touchpoints between spec and delivery."
+      },
+      {
+        "icon": "◈",
+        "title": "AI Transformation Advisory",
+        "description": "Selective strategy engagements for CTO, VP Engineering, and Head of AI at F500 and high-growth organizations. Inquiry-only."
+      },
+      {
+        "icon": "⬢",
+        "title": "Systems Engineering",
+        "description": "20+ years enterprise-level. Azure OpenAI · Semantic Kernel · Python · LangFlow · LangChain. Hands on, not just hands waving."
+      },
+      {
+        "icon": "◉",
+        "title": "Speaking & Panels",
+        "description": "Available for conferences, keynotes, and panels on autonomous systems, AI architecture, and the future of work."
+      }
+    ]
+  },
+  "darkFactoryProof": {
+    "sectionLabel": "Live System",
+    "statusBadge": "OPERATIONAL — DARK FACTORY v1.0",
+    "headline": "The Sovereign Council",
+    "description": "A live, production-deployed multi-agent AI architecture. Thirteen specialized agents operating across five operational domains. This is not a portfolio project. It is my primary business infrastructure — running continuously, executing across strategy, legal, venture, finance, and build execution with zero human operator touchpoints between task and delivery.",
+    "domains": [
+      {
+        "tier": "T1",
+        "label": "Executive Command",
+        "color": "gold",
+        "agents": [
+          "METATRON — Principal Architect & Systems Orchestrator"
+        ]
+      },
+      {
+        "tier": "T2",
+        "label": "Strategic Intelligence",
+        "color": "cyber",
+        "agents": [
+          "The Career Architect — W2 trajectory & positioning",
+          "The Venture Architect — GWI & CMBS strategy",
+          "The Legal Guardian — IP, contracts, compliance",
+          "The Wealth Intelligence System — financial intelligence"
+        ]
+      },
+      {
+        "tier": "T3",
+        "label": "Execution Layer",
+        "color": "slate",
+        "agents": [
+          "The Sovereign Design Studio — digital build & infrastructure",
+          "The GrowthWave Forge — content & brand media",
+          "The Talent Engine — recruiting & team build"
+        ]
+      }
+    ],
+    "metrics": [
+      {
+        "value": "13",
+        "label": "Specialized agents"
+      },
+      {
+        "value": "5",
+        "label": "Operational domains"
+      },
+      {
+        "value": "0",
+        "label": "Human operator touchpoints"
+      }
+    ],
+    "linkText": "View full architecture documentation",
+    "linkHref": "/work"
+  },
+  "techStackMarquee": {
+    "_techStackNote": "TECH_STACK array is defined in src/consts/index.ts and used by the TechStackMarquee component. The marquee display list below mirrors the component's inline array (which includes extras like Node.js, GitHub Actions, Netlify, Azure Static Web Apps not in TECH_STACK const).",
+    "sectionLabel": "Stack",
+    "items": [
+      "Azure",
+      "Claude AI",
+      "Python",
+      "LangFlow",
+      "Semantic Kernel",
+      "Cursor",
+      "Astro",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "FastAPI",
+      "GitHub Actions",
+      "Netlify",
+      "Azure Static Web Apps"
+    ]
+  },
+  "ctaSection": {
+    "sectionLabel": "Ready to Build",
+    "headlinePart1": "If you're serious about",
+    "headlineHighlight": "AI transformation",
+    "headlinePart3": "— let's talk architecture.",
+    "description": "Strategy calls are reserved for CTO, VP Engineering, and Head of AI engagements at organizations ready to move from exploration to execution. Come with a real problem. Leave with a real plan.",
+    "cta": {
+      "primary": {
+        "label": "Book a Strategy Call",
+        "href": "/contact"
+      },
+      "secondary": {
+        "label": "View Architecture Work",
+        "href": "/work"
+      }
+    },
+    "engagementCard": {
+      "title": "Strategy Engagement",
+      "price": "By Inquiry",
+      "features": [
+        "90-minute architecture deep-dive",
+        "Current state assessment",
+        "Dark Factory readiness scoring",
+        "Transformation roadmap (60–90 day)",
+        "Follow-on retainer available"
+      ],
+      "qualifierLine1": "QUALIFIED: CTO · VP Engineering · Head of AI",
+      "qualifierLine2": "F500 · High-growth · Venture-backed"
+    }
+  },
+  "faqSchema": [
+    {
+      "question": "What does an agentic AI architect do?",
+      "answer": "An agentic AI architect designs, builds, and deploys autonomous AI agent systems that operate within enterprise environments. This includes architecting multi-agent orchestration frameworks, designing RAG pipelines for enterprise knowledge bases, implementing LLM-powered workflows with tools like Azure OpenAI and Semantic Kernel, and ensuring production deployments meet security, compliance, and governance requirements in regulated industries like healthcare and financial services."
+    },
+    {
+      "question": "How to deploy AI agents in enterprise environments?",
+      "answer": "Enterprise AI agent deployment requires a production-first architecture approach: define agent scope and governance boundaries, implement RAG pipelines connecting to enterprise knowledge bases, deploy using managed identity and zero-trust security patterns, integrate with existing enterprise systems through API gateways, and establish observability and audit trails. Organizations that follow an AI maturity model and invest in specification-driven development consistently achieve faster time-to-production than those that start with experimentation."
+    },
+    {
+      "question": "What is an AI maturity assessment framework?",
+      "answer": "An AI maturity assessment framework evaluates an organization's readiness to implement and scale AI systems across five levels: Level 1 (Manual/Ad-Hoc), Level 2 (Assisted — AI copilots augmenting individual tasks), Level 3 (Automated — AI agents handling defined workflows), Level 4 (Autonomous — multi-agent systems operating with minimal human oversight), and Level 5 (Dark Factory — fully autonomous, AI-orchestrated operational pipelines with zero human touchpoints). Research from MIT indicates that 95% of organizations investing in generative AI see zero measurable ROI, typically because they stall at Level 1-2 without a structured maturity path."
+    },
+    {
+      "question": "How can enterprise AI transformation be completed in 90 days instead of 18 months?",
+      "answer": "By deploying a production-ready AI architecture using specification-driven development, multi-agent orchestration frameworks like Semantic Kernel, and pre-built integration patterns for enterprise systems. The key is replacing sequential human-dependent processes with autonomous AI agent pipelines operating at Level 4-5 maturity, eliminating handoff delays, and using AI-driven code generation to compress the SDLC cycle time by 70% or more."
+    },
+    {
+      "question": "What certifications do you need for enterprise AI roles?",
+      "answer": "Enterprise AI architect roles typically require a combination of cloud platform certifications and practical production experience. Key certifications include Azure Solutions Architect Expert (AZ-305), Azure AI Engineer Associate (AI-102), and platform-specific credentials for Microsoft Copilot Studio or similar tools. However, certifications alone are insufficient — the market values architects who combine strategic consulting experience with hands-on AI agent deployment in production environments, particularly in regulated industries where governance and compliance are non-negotiable."
+    }
+  ]
+}

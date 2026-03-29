@@ -1,6 +1,9 @@
 ---
 // Hero.astro — wilfredmorgan.com
 // Commanding. Dark mode. NOT a welcome message.
+import homepageData from "../data/homepage.json";
+const { hero } = homepageData;
+const positioningParts = hero.positioning.split(hero.positioningHighlight);
 ---
 
 <section
@@ -48,12 +51,12 @@
       <!-- Section label -->
       <div class="flex items-center gap-3 mb-8 animate-fade-up opacity-0 animate-delay-100">
         <span class="inline-block w-8 h-px bg-gold/60"></span>
-        <span class="section-label">Enterprise AI Architect · Agentic AI Implementation</span>
+        <span class="section-label">{hero.sectionLabel}</span>
       </div>
 
       <!-- SEO H1 (visually hidden, crawlable) -->
       <h1 class="sr-only">
-        Wilfred Morgan — Enterprise AI Architect specializing in Agentic AI Implementation & Generative AI Architecture
+        {hero.seoTitle}
       </h1>
 
       <!-- Visual name display -->
@@ -62,9 +65,9 @@
         style="font-size: clamp(3.5rem, 8vw, 7rem); line-height: 1; letter-spacing: -0.03em;"
         aria-hidden="true"
       >
-        Wilfred
+        {hero.name.first}
         <br />
-        <span class="text-gradient-gold">Morgan</span>
+        <span class="text-gradient-gold">{hero.name.last}</span>
       </p>
 
       <!-- Positioning line — punchy, commanding -->
@@ -73,17 +76,14 @@
           class="font-body text-slate-300 max-w-2xl"
           style="font-size: clamp(1.15rem, 2.5vw, 1.5rem); line-height: 1.5;"
         >
-          Enterprise AI architect specializing in{" "}
-          <span class="text-gold font-semibold">agentic AI deployment</span>,
-          generative AI architecture, and multi-agent orchestration for regulated
-          industries. From concept to production in days.
+          {positioningParts[0]}<span class="text-gold font-semibold">{hero.positioningHighlight}</span>{positioningParts[1]}
         </p>
       </div>
 
       <!-- CTA row -->
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-fade-up opacity-0 animate-delay-400">
-        <a href="/contact" class="btn-gold">
-          Book a Strategy Call
+        <a href={hero.cta.primary.href} class="btn-gold">
+          {hero.cta.primary.label}
           <svg
             width="16"
             height="16"
@@ -100,8 +100,8 @@
             ></path>
           </svg>
         </a>
-        <a href="/work" class="btn-ghost">
-          View Architecture Work
+        <a href={hero.cta.secondary.href} class="btn-ghost">
+          {hero.cta.secondary.label}
         </a>
       </div>
 
@@ -110,11 +110,7 @@
         class="mt-16 pt-8 border-t border-gold/10 grid grid-cols-2 sm:grid-cols-3 gap-8 animate-fade-up opacity-0 animate-delay-500"
       >
         {
-          [
-            { value: "20+", label: "Years enterprise systems" },
-            { value: "L4–L5", label: "Dark Factory maturity" },
-            { value: "90 days", label: "Enterprise transformation" },
-          ].map((stat) => (
+          hero.stats.map((stat) => (
             <div>
               <div
                 class="font-heading font-extrabold text-gold"
@@ -137,7 +133,7 @@
     class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in opacity-0 animate-delay-700"
     aria-hidden="true"
   >
-    <span class="font-mono text-xs text-slate-600 tracking-widest">SCROLL</span>
+    <span class="font-mono text-xs text-slate-600 tracking-widest">{hero.scrollIndicator}</span>
     <div class="w-px h-8 bg-gradient-to-b from-gold/40 to-transparent"></div>
   </div>
 </section>

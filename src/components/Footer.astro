@@ -1,6 +1,7 @@
 ---
 import { SITE } from "../consts/index";
-
+import sharedData from "../data/shared.json";
+const { footer } = sharedData;
 const year = new Date().getFullYear();
 ---
 
@@ -25,11 +26,11 @@ const year = new Date().getFullYear();
             </svg>
           </span>
           <span class="font-heading text-xs tracking-[0.2em] uppercase text-slate-400">
-            Wilfred Morgan
+            {footer.wordmark}
           </span>
         </div>
         <p class="font-mono text-xs text-slate-400 tracking-wider">
-          Enterprise AI Architect · Agentic AI Implementation
+          {footer.tagline}
         </p>
       </div>
 
@@ -60,19 +61,19 @@ const year = new Date().getFullYear();
       </nav>
 
       <!-- Right: CTA -->
-      <a href="/contact" class="btn-ghost text-xs py-2 px-4 shrink-0">
-        Book a Call →
+      <a href={footer.ctaButton.href} class="btn-ghost text-xs py-2 px-4 shrink-0">
+        {footer.ctaButton.label}
       </a>
     </div>
 
     <!-- Bottom bar -->
     <div class="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3">
       <p class="font-mono text-xs text-slate-500">
-        © {year} Wilfred Morgan. All rights reserved.
+        © {year} {footer.wordmark}. All rights reserved.
       </p>
       <div class="flex items-center gap-1">
         <span class="inline-block w-1.5 h-1.5 rounded-full bg-gold/40 animate-pulse"></span>
-        <span class="font-mono text-xs text-slate-500">Dark Factory · Sovereign Council</span>
+        <span class="font-mono text-xs text-slate-500">{footer.statusBadge}</span>
       </div>
     </div>
   </div>

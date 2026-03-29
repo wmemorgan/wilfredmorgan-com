@@ -1,6 +1,8 @@
 ---
 // DarkFactoryProof.astro
 // The Sovereign Council — framed as a live operational system, not a concept
+import homepageData from "../data/homepage.json";
+const { darkFactoryProof } = homepageData;
 ---
 
 <section
@@ -24,7 +26,7 @@
     <!-- Header -->
     <div class="grid lg:grid-cols-12 gap-8 mb-16">
       <div class="lg:col-span-3">
-        <span class="section-label">Live System</span>
+        <span class="section-label">{darkFactoryProof.sectionLabel}</span>
         <div class="mt-3 w-12 h-px bg-gold/40"></div>
       </div>
       <div class="lg:col-span-9">
@@ -34,22 +36,17 @@
             <div class="flex items-center gap-2 mb-4">
               <span class="inline-flex items-center gap-1.5 font-mono text-xs text-emerald-400/80 tracking-wider">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block"></span>
-                OPERATIONAL — DARK FACTORY v1.0
+                {darkFactoryProof.statusBadge}
               </span>
             </div>
             <h2
               class="font-heading font-bold text-slate-100 leading-tight mb-4"
               style="font-size: clamp(1.75rem, 3.5vw, 3rem); letter-spacing: -0.02em;"
             >
-              The Sovereign Council
+              {darkFactoryProof.headline}
             </h2>
             <p class="font-body text-slate-400 max-w-2xl" style="font-size: 1.0625rem; line-height: 1.75;">
-              A live, production-deployed multi-agent AI architecture. Thirteen
-              specialized agents operating across five operational domains.
-              This is not a portfolio project. It is my primary business
-              infrastructure — running continuously, executing across strategy,
-              legal, venture, finance, and build execution with zero human
-              operator touchpoints between task and delivery.
+              {darkFactoryProof.description}
             </p>
           </div>
         </div>
@@ -64,35 +61,7 @@
         <!-- Domain tiles -->
         <div class="space-y-3">
           {
-            [
-              {
-                tier: "T1",
-                label: "Executive Command",
-                agents: ["METATRON — Principal Architect & Systems Orchestrator"],
-                color: "gold",
-              },
-              {
-                tier: "T2",
-                label: "Strategic Intelligence",
-                agents: [
-                  "The Career Architect — W2 trajectory & positioning",
-                  "The Venture Architect — GWI & CMBS strategy",
-                  "The Legal Guardian — IP, contracts, compliance",
-                  "The Wealth Intelligence System — financial intelligence",
-                ],
-                color: "cyber",
-              },
-              {
-                tier: "T3",
-                label: "Execution Layer",
-                agents: [
-                  "The Sovereign Design Studio — digital build & infrastructure",
-                  "The GrowthWave Forge — content & brand media",
-                  "The Talent Engine — recruiting & team build",
-                ],
-                color: "slate",
-              },
-            ].map((domain) => (
+            darkFactoryProof.domains.map((domain) => (
               <div
                 class="border border-white/5 p-5 hover:border-gold/20 transition-all duration-300 group"
               >
@@ -135,11 +104,7 @@
         <!-- Proof metrics -->
         <div class="mt-8 grid grid-cols-3 gap-4">
           {
-            [
-              { value: "13", label: "Specialized agents" },
-              { value: "5", label: "Operational domains" },
-              { value: "0", label: "Human operator touchpoints" },
-            ].map((m) => (
+            darkFactoryProof.metrics.map((m) => (
               <div class="border border-gold/10 p-4 text-center">
                 <div class="font-heading font-extrabold text-gold" style="font-size: 1.75rem;">
                   {m.value}
@@ -155,10 +120,10 @@
         <!-- Link to work -->
         <div class="mt-6">
           <a
-            href="/work"
+            href={darkFactoryProof.linkHref}
             class="inline-flex items-center gap-2 font-heading text-xs tracking-[0.15em] uppercase text-gold hover:text-gold transition-colors duration-200"
           >
-            View full architecture documentation
+            {darkFactoryProof.linkText}
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>

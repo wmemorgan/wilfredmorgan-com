@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "About Wilfred Morgan — Enterprise AI Architect & AI Strategy Executive",
+    "description": "Wilfred Morgan is an enterprise AI architect with 20+ years of experience deploying production AI systems in financial services, healthcare, and energy. Former banking CIO turned hands-on AI builder — Semantic Kernel, Azure OpenAI, multi-agent orchestration."
+  },
+  "header": {
+    "sectionLabel": "About",
+    "seoTitle": "Wilfred Morgan — Enterprise AI Architect, Generative AI Architecture & AI Strategy Executive",
+    "displayHeadline": "The Architect"
+  },
+  "identityCard": {
+    "items": [
+      {
+        "label": "Role",
+        "value": "Enterprise AI Architect"
+      },
+      {
+        "label": "Specialization",
+        "value": "Agentic AI · Generative AI · Multi-Agent Systems"
+      },
+      {
+        "label": "Experience",
+        "value": "20+ years"
+      },
+      {
+        "label": "Verticals",
+        "value": "Financial Services · Healthcare · Energy"
+      },
+      {
+        "label": "Engagements",
+        "value": "Selective — inquiry only"
+      },
+      {
+        "label": "Status",
+        "value": "Available for engagements"
+      }
+    ]
+  },
+  "bio": {
+    "paragraphs": [
+      "I am a Principal Architect and AI systems engineer with over 15 years of experience designing and deploying enterprise-grade technology systems. I am not a manager who moved into AI strategy. I am a builder — someone who has been writing code, designing architectures, and shipping production systems throughout my entire career.",
+      "My current focus is the architecture and deployment of Dark Factories — fully autonomous, AI-orchestrated operational pipelines that eliminate human operator touchpoints between task intake and artifact delivery. The Sovereign Council, my flagship project, is a live 13-agent system running across five operational domains as my primary business infrastructure.",
+      "I work with CTO, VP Engineering, and Head of AI at F500 and high-growth organizations who are done with exploration and ready for execution. My advisory engagements are structured for organizations that have a real transformation problem and the organizational will to solve it in 90 days instead of 18 months.",
+      "I am also available for speaking engagements, conference panels, and keynotes on autonomous systems design, AI transformation at enterprise scale, and the future of human-AI collaboration in technical organizations."
+    ],
+    "highlights": [
+      "Dark Factories"
+    ]
+  },
+  "speaking": {
+    "headline": "Speaking & Panels",
+    "description": "Available for conferences, panels, and keynotes on autonomous systems, AI transformation, and the architecture of Dark Factory operations. Target audiences: technology leadership, enterprise AI practitioners, innovation forums.",
+    "topics": [
+      {
+        "topic": "Dark Factory Architecture",
+        "description": "How to design and deploy fully autonomous operational pipelines at enterprise scale."
+      },
+      {
+        "topic": "AI Transformation That Actually Ships",
+        "description": "The architectural decisions that separate successful AI transformations from expensive experiments."
+      },
+      {
+        "topic": "The 90-Day Enterprise Transformation",
+        "description": "Practical methodology for compressing 18-month roadmaps without compromising quality or security."
+      },
+      {
+        "topic": "Multi-Agent System Design",
+        "description": "Agent taxonomy, orchestration patterns, and failure mode management for production AI systems."
+      }
+    ],
+    "cta": {
+      "label": "Speaking Inquiry →",
+      "href": "/contact"
+    }
+  },
+  "faqSchema": [
+    {
+      "question": "How to transition from software engineer to AI architect?",
+      "answer": "The most effective path from software engineer to AI architect combines three elements: deep platform expertise (Azure OpenAI, Semantic Kernel, or equivalent LLM orchestration frameworks), production deployment experience in governed enterprise environments, and strategic consulting skills to translate technical capabilities into business outcomes. The key differentiator is being a builder-strategist — someone who can architect complex AI solutions, prototype to prove value, and communicate the business case to executive leadership. Certifications like AZ-305 and AI-102 provide credibility, but hands-on production experience with agentic AI and RAG pipelines is what separates architects from theorists."
+    },
+    {
+      "question": "Does Wilfred Morgan do AI consulting and speaking engagements?",
+      "answer": "Yes. Wilfred Morgan is available for enterprise AI architecture consulting, AI maturity assessments, conference keynotes, and panel discussions on topics including agentic AI deployment, multi-agent orchestration, AI-driven SDLC transformation, and production AI systems in regulated industries. Engagements are selective and reserved for organizations ready to move from AI exploration to production execution."
+    },
+    {
+      "question": "What industries does Wilfred Morgan specialize in for AI implementation?",
+      "answer": "Wilfred Morgan's AI architecture practice focuses on regulated industries including financial services (11+ years, including banking CIO experience), healthcare (document intelligence, conversational AI, HIPAA-compliant architectures), and energy/manufacturing (operational AI, workflow automation). The common thread is deploying production AI systems where security, compliance, and governance are non-negotiable — not optional."
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 ---
 // TechStackMarquee.astro
 // Scrolling tech stack — Azure · Claude · Python · LangFlow · Semantic Kernel · etc.
+import homepageData from "../data/homepage.json";
+const { techStackMarquee } = homepageData;
+const doubledItems = [...techStackMarquee.items, ...techStackMarquee.items];
 ---
 
 <section
@@ -21,7 +24,7 @@
 
   <!-- Label — center top -->
   <div class="text-center mb-8">
-    <span class="section-label">Stack</span>
+    <span class="section-label">{techStackMarquee.sectionLabel}</span>
   </div>
 
   <!-- Marquee track -->
@@ -29,38 +32,7 @@
     <div class="flex animate-marquee gap-0 whitespace-nowrap" style="width: max-content;">
       {
         /* Doubled for seamless loop */
-        [
-          "Azure",
-          "Claude AI",
-          "Python",
-          "LangFlow",
-          "Semantic Kernel",
-          "Cursor",
-          "Astro",
-          "React",
-          "TypeScript",
-          "Tailwind CSS",
-          "Node.js",
-          "FastAPI",
-          "GitHub Actions",
-          "Netlify",
-          "Azure Static Web Apps",
-          "Azure",
-          "Claude AI",
-          "Python",
-          "LangFlow",
-          "Semantic Kernel",
-          "Cursor",
-          "Astro",
-          "React",
-          "TypeScript",
-          "Tailwind CSS",
-          "Node.js",
-          "FastAPI",
-          "GitHub Actions",
-          "Netlify",
-          "Azure Static Web Apps",
-        ].map((tech, i) => (
+        doubledItems.map((tech, i) => (
           <span
             class:list={[
               "inline-flex items-center gap-4 px-8 font-mono tracking-widest uppercase",
@@ -81,23 +53,7 @@
   <!-- Accessible list for screen readers -->
   <ul class="sr-only">
     {
-      [
-        "Azure",
-        "Claude AI",
-        "Python",
-        "LangFlow",
-        "Semantic Kernel",
-        "Cursor",
-        "Astro",
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Node.js",
-        "FastAPI",
-        "GitHub Actions",
-        "Netlify",
-        "Azure Static Web Apps",
-      ].map((tech) => <li>{tech}</li>)
+      techStackMarquee.items.map((tech) => <li>{tech}</li>)
     }
   </ul>
 </section>

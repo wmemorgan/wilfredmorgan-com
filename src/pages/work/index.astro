@@ -5,42 +5,9 @@
 // SDS Build: WM_WorkPage_2026-03-11_v1
 
 import PageLayout from "../../layouts/PageLayout.astro";
+import workData from "../../data/work.json";
 
-const projects = [
-  {
-    id: "sovereign-council",
-    title: "The Sovereign Council",
-    category: "Dark Factory · AI Architecture",
-    status: "LIVE",
-    year: "2025–Present",
-    summary:
-      "Principal Architect and systems engineer for a 13-agent, multi-tier AI orchestration system operating across strategy, legal, venture, financial intelligence, and digital build execution. L4–L5 Dark Factory maturity. Zero human operator touchpoints between task and delivery.",
-    metrics: ["13 agentic AI agents", "Multi-agent orchestration", "Production autonomous system"],
-    flagship: true,
-  },
-  {
-    id: "enterprise-ai-transformation",
-    title: "Enterprise AI Transformation",
-    category: "Advisory · Architecture",
-    status: "CASE STUDY",
-    year: "2024",
-    summary:
-      "Enterprise AI transformation for a Fortune 500 organization. Designed and deployed a multi-agent orchestration architecture using Azure OpenAI and Semantic Kernel, compressing an 18-month AI implementation roadmap into a 90-day execution plan. Delivered autonomous AI agent pipelines reducing manual workflow overhead by over 70%.",
-    metrics: ["90-day delivery", "70%+ overhead reduction", "Principal-led"],
-    flagship: false,
-  },
-  {
-    id: "dark-factory-methodology",
-    title: "Dark Factory Methodology",
-    category: "Systems Design · Whitepaper",
-    status: "PUBLISHED",
-    year: "2025",
-    summary:
-      "Proprietary framework for designing autonomous, AI-orchestrated operational pipelines at L4–L5 maturity. Documents the architecture, agent taxonomy, and deployment protocols for zero-touchpoint delivery systems.",
-    metrics: ["L4–L5 maturity", "Full taxonomy", "Deployment protocols"],
-    flagship: false,
-  },
-];
+const projects = workData.projects;
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -53,8 +20,8 @@ const breadcrumbSchema = {
 ---
 
 <PageLayout
-  title="Enterprise AI Case Studies — Wilfred Morgan | AI Agent Deployment & Architecture"
-  description="Case studies and architecture work from enterprise AI implementations — agentic AI deployment, RAG pipelines, multi-agent orchestration, and AI-driven SDLC transformation in regulated industries."
+  title={workData.meta.title}
+  description={workData.meta.description}
   extraJsonLd={[breadcrumbSchema]}
 >
   <section class="py-24 lg:py-32">
@@ -63,7 +30,7 @@ const breadcrumbSchema = {
       <!-- Page header -->
       <div class="grid lg:grid-cols-12 gap-8 mb-16">
         <div class="lg:col-span-3">
-          <span class="section-label">Work</span>
+          <span class="section-label">{workData.header.sectionLabel}</span>
           <div class="mt-3 w-12 h-px bg-gold/40"></div>
         </div>
         <div class="lg:col-span-9">
@@ -71,11 +38,10 @@ const breadcrumbSchema = {
             class="font-heading font-extrabold text-slate-100 leading-tight mb-4"
             style="font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -0.03em;"
           >
-            Authority Archive
+            {workData.header.displayHeadline}
           </h1>
           <p class="font-body text-slate-400 max-w-xl" style="font-size: 1.0625rem; line-height: 1.75;">
-            Selected architecture work, case studies, and deployed systems. All
-            enterprise engagements are anonymized. Metrics are real.
+            {workData.header.description}
           </p>
         </div>
       </div>

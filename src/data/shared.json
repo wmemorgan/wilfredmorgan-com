@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "_note": "Nav links are already externalized in src/consts/index.ts SITE.navLinks — no duplication needed here",
+    "logoAriaLabel": "Wilfred Morgan — Home",
+    "logoWordmark": "Wilfred Morgan",
+    "mobileMenuLabel": "Toggle menu",
+    "ctaButton": {
+      "label": "Book a Call",
+      "href": "/contact"
+    }
+  },
+  "footer": {
+    "wordmark": "Wilfred Morgan",
+    "tagline": "Enterprise AI Architect · Agentic AI Implementation",
+    "copyright": "© {year} Wilfred Morgan. All rights reserved.",
+    "statusBadge": "Dark Factory · Sovereign Council",
+    "navLinks": [
+      {
+        "label": "Enterprise AI Case Studies",
+        "href": "/work"
+      },
+      {
+        "label": "AI Architecture Blog",
+        "href": "/writing"
+      },
+      {
+        "label": "About Wilfred Morgan",
+        "href": "/about"
+      },
+      {
+        "label": "Book an AI Strategy Call",
+        "href": "/contact"
+      }
+    ],
+    "ctaButton": {
+      "label": "Book a Call →",
+      "href": "/contact"
+    }
+  },
+  "error404": {
+    "pageTitle": "Page Not Found — Wilfred Morgan",
+    "pageDescription": "This page doesn't exist. Navigate back to wilfredmorgan.com.",
+    "sectionLabel": "404",
+    "badge": "ERROR_404 · PAGE_NOT_FOUND",
+    "headline": "This page doesn't exist.",
+    "description": "Even autonomous systems have edge cases. Navigate back to something real.",
+    "cta": {
+      "primary": {
+        "label": "Back to Home →",
+        "href": "/"
+      },
+      "secondary": {
+        "label": "View Architecture Work",
+        "href": "/work"
+      }
+    },
+    "quickLinks": [
+      {
+        "label": "Work",
+        "href": "/work"
+      },
+      {
+        "label": "Writing",
+        "href": "/writing"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ]
+  },
+  "seo": {
+    "personSchema": {
+      "name": "Wilfred Morgan",
+      "url": "https://wilfredmorgan.com",
+      "jobTitle": "Enterprise AI Architect",
+      "description": "Enterprise AI architect and agentic AI implementation specialist with 20+ years of experience deploying production AI systems in regulated industries. Expert in generative AI architecture, multi-agent orchestration, RAG pipelines, Azure OpenAI, Semantic Kernel, and AI-driven SDLC transformation.",
+      "knowsAbout": [
+        "Enterprise AI Implementation",
+        "Agentic AI Architecture",
+        "Generative AI Architecture",
+        "Multi-Agent Orchestration",
+        "RAG Pipeline Design",
+        "Azure OpenAI",
+        "Semantic Kernel",
+        "Microsoft Copilot Studio",
+        "LLM Orchestration",
+        "AI Maturity Assessment",
+        "AI-Driven SDLC Transformation",
+        "Healthcare AI Architecture",
+        "Financial Services AI",
+        "Zero-Trust AI Security",
+        "Dark Factory Design",
+        "Python AI Pipeline Development",
+        "LangChain",
+        "LangFlow"
+      ],
+      "credentials": [
+        {
+          "name": "Microsoft Certified: Azure Solutions Architect Expert (AZ-305)",
+          "category": "Professional Certification"
+        },
+        {
+          "name": "Microsoft LEAP Alumni",
+          "category": "Professional Program"
+        }
+      ],
+      "occupation": {
+        "name": "Enterprise AI Architect",
+        "category": "15-1299.09",
+        "skills": "Agentic AI deployment, generative AI architecture, RAG pipeline design, multi-agent orchestration, enterprise AI implementation, AI maturity assessment, Azure OpenAI, Semantic Kernel, Microsoft Copilot Studio"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/wilfredmorgan/"
+      ],
+      "contactPoint": {
+        "email": "info@wilfredmorgan.com",
+        "contactType": "Business Inquiries",
+        "url": "https://wilfredmorgan.com/contact"
+      }
+    },
+    "webSiteSchema": {
+      "name": "Wilfred Morgan — Enterprise AI Architect",
+      "url": "https://wilfredmorgan.com",
+      "description": "Enterprise AI architecture consulting, agentic AI implementation, and thought leadership from Wilfred Morgan — production AI deployment for regulated industries."
+    },
+    "professionalServiceSchema": {
+      "name": "Wilfred Morgan — Enterprise AI Consulting",
+      "url": "https://wilfredmorgan.com",
+      "description": "Enterprise AI architecture consulting specializing in agentic AI implementation, RAG pipeline design, AI maturity assessment, and generative AI architecture for regulated industries.",
+      "serviceTypes": [
+        "AI Architecture Consulting",
+        "Agentic AI Implementation",
+        "RAG Pipeline Design",
+        "AI Maturity Assessment",
+        "Enterprise AI Governance"
+      ],
+      "areaServed": "Worldwide",
+      "strategyCallOffer": {
+        "name": "AI Architecture Strategy Call",
+        "description": "90-minute engagement for CTO, VP Engineering, and Head of AI to assess AI maturity and define implementation roadmap."
+      }
+    }
+  },
+  "llmsTxt": {
+    "_note": "public/llms.txt content is derived from these same data files — sync manually or via build script"
+  }
+}
