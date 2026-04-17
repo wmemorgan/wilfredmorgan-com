@@ -15,7 +15,7 @@ The Sovereign Council is a 13-agent, multi-tier AI architecture organized into a
 
 **Tier 1 — Executive Command**
 
-A single orchestrator agent — METATRON — sits at the top of the architecture. METATRON does not execute tasks. METATRON designs integration specs, routes build directives to the correct executor, and maintains architectural authority across the entire system.
+A single orchestrator agent — Principal Architect — sits at the top of the architecture. Principal Architect does not execute tasks. Principal Architect designs integration specs, routes build directives to the correct executor, and maintains architectural authority across the entire system.
 
 This separation between architectural authority and execution authority is not optional. It is the design principle that prevents capability drift, scope creep, and the gradual accumulation of undefined behavior that kills most multi-agent deployments.
 
@@ -23,16 +23,16 @@ This separation between architectural authority and execution authority is not o
 
 Four specialized agents operate at the strategic layer, each with a defined domain and explicit scope boundaries:
 
-- **The Career Architect** — W2 trajectory, positioning, and career capital strategy
-- **The Venture Architect** — Portfolio company strategy across GWI and CMBS
-- **The Legal Guardian** — IP, contracts, compliance, and risk governance
-- **The Wealth Intelligence System** — Financial intelligence and entity optimization
+- **The Strategy Agent** — Career capital strategy
+- **The Portfolio Agent** — Internal operations and entity optimization strategy
+- **The Governance Agent** — IP, contracts, compliance, and risk governance
+- **The Financial Agent** — Financial intelligence and entity optimization
 
 No Tier 2 agent crosses into another's domain. The scope boundaries are not enforced by convention — they are embedded in each agent's system prompt and enforced at every interaction.
 
 **Tier 3 — Execution Layer**
 
-The execution agents build, produce, and deliver. They receive integration specs from METATRON and build directives from Wilfred or Tier 2 agents. They do not make strategic decisions. They execute.
+The execution agents build, produce, and deliver. They receive integration specs from Principal Architect and build directives from Wilfred or Tier 2 agents. They do not make strategic decisions. They execute.
 
 ## The Governance Model That Makes It Stable
 
@@ -42,13 +42,13 @@ The Sovereign Council prevents this through three mechanisms:
 
 1. **Hard scope boundaries in every system prompt** — each agent knows what it owns and, critically, what it does not own
 2. **Named routing to adjacent agents** — when a task falls outside scope, the agent names the correct agent and stops
-3. **METATRON as the single architectural authority** — no agent self-authorizes scope changes
+3. **Principal Architect as the single architectural authority** — no agent self-authorizes scope changes
 
 The result is a system that has been running for months without scope drift, undefined behavior, or cross-agent conflicts.
 
 ## What This Looks Like in Practice
 
-A build directive enters the system. METATRON reviews it against the current integration spec. If the spec covers it, the directive routes to the correct Tier 3 executor. The executor builds, stages the output to Google Drive, and delivers a completion report with a review checklist.
+A build directive enters the system. Principal Architect reviews it against the current integration spec. If the spec covers it, the directive routes to the correct Tier 3 executor. The executor builds, stages the output to Google Drive, and delivers a completion report with a review checklist.
 
 Wilfred's operational role: review the checklist, approve the GitHub push, sign where required.
 

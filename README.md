@@ -1,9 +1,9 @@
-# wilfredmorgan.com — Sovereign Design Studio Build
+# wilfredmorgan.com — Build Pipeline Build
 
 **Build:** WM_Site_2026-03-11_v1  
 **Status:** Phase 1 Complete — Phase 2 Pending  
-**Executor:** The Sovereign Design Studio 🎨  
-**Spec:** SITE_ARCHITECTURE.yaml v1.0 (METATRON)
+**Executor:** Build Pipeline 🎨  
+**Spec:** SITE_ARCHITECTURE.yaml v1.0 (Principal Architect)
 
 ---
 
@@ -51,7 +51,7 @@ npm run preview  # Preview production build
 
 | Token | Value |
 |---|---|
-| Base | `#0F172A` (Deep Obsidian) |
+| Base | `#0F172A` (Deep Slate) |
 | Gold | `#D4AF37` (Sovereign Gold) |
 | Cyber | `#38BDF8` (Cyber Blue) |
 | Text | `#F1F5F9` |
@@ -60,4 +60,4 @@ npm run preview  # Preview production build
 ✅ NOT APPLICABLE — wilfredmorgan.com (personal brand site)
 
 ## Tech Stack Compliance
-✅ Astro · React · Tailwind CSS · Netlify — GWI standard stack confirmed
+✅ Astro · React · Tailwind CSS · Netlify — Internal standard stack confirmed

@@ -4,7 +4,6 @@
 import homepageData from "../data/homepage.json";
 const { authorityStatement } = homepageData;
 const headlineParts = authorityStatement.headline.split(authorityStatement.headlineHighlight);
-const p2parts = authorityStatement.paragraphs[1].split(authorityStatement.flagshipHighlight);
 ---
 
 <section
@@ -41,15 +40,30 @@ const p2parts = authorityStatement.paragraphs[1].split(authorityStatement.flagsh
 
         <!-- Body paragraphs -->
         <div class="space-y-6 font-body text-slate-400" style="font-size: 1.0625rem; line-height: 1.75;">
-          {authorityStatement.paragraphs.map((para, idx) =>
-            idx === 1 ? (
-              <p>
-                {p2parts[0]}<span class="text-slate-200 font-semibold">{authorityStatement.flagshipHighlight}</span>{p2parts[1]}
-              </p>
-            ) : (
-              <p>{para}</p>
-            )
-          )}
+          {authorityStatement.paragraphs.map((para) => (
+            <p>{para}</p>
+          ))}
+        </div>
+
+        <!-- Secondary Stat bar -->
+        <div
+          class="mt-12 pt-8 border-t border-gold/10 grid grid-cols-2 sm:grid-cols-4 gap-8 animate-fade-up opacity-0 animate-delay-500"
+        >
+          {
+            authorityStatement.stats.map((stat) => (
+              <div>
+                <div
+                  class="font-heading font-extrabold text-gold"
+                  style="font-size: clamp(1.25rem, 2.5vw, 1.75rem);"
+                >
+                  {stat.value}
+                </div>
+                <div class="font-mono text-xs text-slate-500 tracking-wider mt-1 leading-relaxed">
+                  {stat.label}
+                </div>
+              </div>
+            ))
+          }
         </div>
 
         <!-- Capability cards -->

@@ -86,7 +86,7 @@ function isActive(href: string) {
   <!-- Mobile menu -->
   <div
     id="mobile-menu"
-    class="md:hidden hidden border-t border-gold/10 bg-obsidian/98 backdrop-blur-md"
+    class="md:hidden hidden border-t border-gold/10 bg-darkbase/98 backdrop-blur-md"
   >
     <ul class="px-6 py-6 flex flex-col gap-6">
       {
@@ -119,10 +119,10 @@ function isActive(href: string) {
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 20) {
-      header?.classList.add("bg-obsidian/95", "backdrop-blur-md", "shadow-lg", "shadow-black/20");
+      header?.classList.add("bg-darkbase/95", "backdrop-blur-md", "shadow-lg", "shadow-black/20");
       header?.setAttribute("data-scrolled", "true");
     } else {
-      header?.classList.remove("bg-obsidian/95", "backdrop-blur-md", "shadow-lg", "shadow-black/20");
+      header?.classList.remove("bg-darkbase/95", "backdrop-blur-md", "shadow-lg", "shadow-black/20");
       header?.setAttribute("data-scrolled", "false");
     }
   });

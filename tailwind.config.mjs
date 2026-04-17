@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        obsidian: "#0F172A",
+        darkbase: "#0F172A",
         gold: "#D4AF37",
         "gold-light": "#E8C84C",
         "gold-dim": "#A88B1C",
@@ -60,7 +60,7 @@ export default {
         },
       },
       backgroundImage: {
-        "grid-obsidian":
+        "grid-darkbase":
           "linear-gradient(rgba(212,175,55,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.05) 1px, transparent 1px)",
         "hero-gradient":
           "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(212,175,55,0.15) 0%, transparent 60%)",

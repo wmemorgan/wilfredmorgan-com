@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "About Wilfred Morgan — Enterprise AI Architect & AI Strategy Executive",
-    "description": "Wilfred Morgan is an enterprise AI architect with 15+ years of experience deploying production AI systems in financial services, healthcare, and energy. Former banking CIO turned hands-on AI builder — Semantic Kernel, Azure OpenAI, multi-agent orchestration."
+    "title": "About Wilfred Morgan — AI Systems Architect & AI Strategy Executive",
+    "description": "Wilfred Morgan is an AI Systems Architect with 15+ years of experience deploying production AI systems in financial services, healthcare, and energy. Former banking CIO turned hands-on AI builder — Semantic Kernel, Azure OpenAI, multi-agent orchestration."
   },
   "header": {
     "sectionLabel": "About",
-    "seoTitle": "Wilfred Morgan — Enterprise AI Architect, Generative AI Architecture & AI Strategy Executive",
+    "seoTitle": "Wilfred Morgan — AI Systems Architect, Generative AI Architecture & AI Strategy Executive",
     "displayHeadline": "The Architect"
   },
   "identityCard": {
     "items": [
       {
         "label": "Role",
-        "value": "Enterprise AI Architect"
+        "value": "AI Systems Architect"
       },
       {
         "label": "Specialization",
@@ -80,7 +80,7 @@
     },
     {
       "question": "Does Wilfred Morgan do AI consulting and speaking engagements?",
-      "answer": "Yes. Wilfred Morgan is available for enterprise AI architecture consulting, AI maturity assessments, conference keynotes, and panel discussions on topics including agentic AI deployment, multi-agent orchestration, AI-driven SDLC transformation, and production AI systems in regulated industries. Engagements are selective and reserved for organizations ready to move from AI exploration to production execution."
+      "answer": "Yes. Wilfred Morgan is available for AI Systems Architecture consulting, AI maturity assessments, conference keynotes, and panel discussions on topics including agentic AI deployment, multi-agent orchestration, AI-driven SDLC transformation, and production AI systems in regulated industries. Engagements are selective and reserved for organizations ready to move from AI exploration to production execution."
     },
     {
       "question": "What industries does Wilfred Morgan specialize in for AI implementation?",

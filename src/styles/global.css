@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --color-obsidian: #0f172a;
+    --color-darkbase: #0f172a;
     --color-gold: #d4af37;
     --color-gold-light: #e8c84c;
     --color-cyber: #38bdf8;
@@ -15,7 +15,7 @@
   }
 
   html {
-    @apply bg-obsidian text-slate-100 font-body;
+    @apply bg-darkbase text-slate-100 font-body;
     scroll-behavior: smooth;
   }
 
@@ -77,7 +77,7 @@
 
   .btn-gold {
     @apply inline-flex items-center gap-2 px-6 py-3 font-heading font-semibold text-sm tracking-widest uppercase
-           bg-gold text-obsidian transition-all duration-200;
+           bg-gold text-darkbase transition-all duration-200;
   }
 
   .btn-gold:hover {

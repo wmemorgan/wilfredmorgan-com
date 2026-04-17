@@ -1,16 +1,16 @@
 {
   "meta": {
-    "title": "Wilfred Morgan — Enterprise AI Architect | Agentic AI Implementation & Generative AI Architecture",
-    "description": "Wilfred Morgan is an enterprise AI architect who deploys production agentic AI systems in regulated industries. Specializing in generative AI architecture, RAG pipelines, multi-agent orchestration, and AI-driven SDLC transformation. From concept to production in days, not months."
+    "title": "Wilfred Morgan \u2014 AI Systems Architect | Agentic AI Implementation & Generative AI Architecture",
+    "description": "Wilfred Morgan is an AI systems architect who deploys production agentic AI systems in regulated industries. Specializing in context architecture, multi-agent orchestration, and AI eval design. From concept to production in days."
   },
   "hero": {
-    "sectionLabel": "Enterprise AI Architect · Agentic AI Implementation",
-    "seoTitle": "Wilfred Morgan — Enterprise AI Architect specializing in Agentic AI Implementation & Generative AI Architecture",
+    "sectionLabel": "AI Systems Architect \u00b7 Agentic AI Implementation",
+    "seoTitle": "Wilfred Morgan \u2014 AI Systems Architect specializing in Agentic AI Implementation & Context Architecture",
     "name": {
       "first": "Wilfred",
       "last": "Morgan"
     },
-    "positioning": "Enterprise AI architect specializing in agentic AI deployment, generative AI architecture, and multi-agent orchestration for regulated industries. From concept to production in days.",
+    "positioning": "AI systems architect specializing in agentic AI deployment, context architecture, and multi-agent orchestration for regulated industries. From concept to production in days.",
     "positioningHighlight": "agentic AI deployment",
     "cta": {
       "primary": {
@@ -28,7 +28,7 @@
         "label": "Years enterprise systems"
       },
       {
-        "value": "L4–L5",
+        "value": "L4\u2013L5",
         "label": "Dark Factory maturity"
       },
       {
@@ -40,60 +40,78 @@
   },
   "authorityStatement": {
     "sectionLabel": "What I Build",
-    "headline": "Enterprise technology leaders hire me when they need transformation that actually ships — not a roadmap that expires.",
-    "headlineHighlight": "transformation that actually ships",
+    "headline": "The Context Architecture Thesis",
+    "headlineHighlight": "Context Architecture",
     "paragraphs": [
-      "I design and deploy enterprise AI systems — multi-agent architectures and agentic AI pipelines that compress 18 months of AI transformation into 90 days. No human operators between task intake and delivery. The industry calls them Dark Factories.",
-      "My current flagship — The Sovereign Council — is a live operational system running thirteen specialized AI agents across strategy, venture architecture, legal compliance, financial intelligence, and digital build execution. It is not a demo. It is my primary operating infrastructure.",
-      "If your organization is serious about AI transformation — not exploration, not pilot programs, not proof-of-concept theater — I am the architect who builds the real thing."
+      "MIT 2025 research found 95% of enterprise AI deployments produce zero measurable ROI. The failure pattern is not model capability \u2014 it is context architecture. Organizations that win with AI do not deploy better models. They engineer better context, better evaluation, and better failure-mode discipline. I design and deploy the architecture that closes the 95% gap \u2014 in regulated industries, at Fortune 500 scale, in 90 days instead of 18 months."
     ],
-    "flagshipHighlight": "The Sovereign Council",
+    "flagshipHighlight": "Context Architecture",
     "capabilities": [
       {
-        "icon": "⬡",
+        "icon": "\u2b21",
         "title": "Dark Factory Design",
         "description": "End-to-end autonomous pipeline architecture. Zero human operator touchpoints between spec and delivery."
       },
       {
-        "icon": "◈",
+        "icon": "\u2b21",
+        "title": "Governance & Eval Architecture",
+        "description": "Production-grade evaluation pipelines, drift detection, hallucination mitigation, and audit-ready logging \u2014 the layer that separates AI pilots from AI systems that survive regulatory review."
+      },
+      {
+        "icon": "\u25c8",
         "title": "AI Transformation Advisory",
         "description": "Selective strategy engagements for CTO, VP Engineering, and Head of AI at F500 and high-growth organizations. Inquiry-only."
       },
       {
-        "icon": "⬢",
+        "icon": "\u2b22",
         "title": "Systems Engineering",
-        "description": "15+ years enterprise-level. Azure OpenAI · Semantic Kernel · Python · LangFlow · LangChain. Hands on, not just hands waving."
+        "description": "15+ years enterprise-level. Azure OpenAI \u00b7 Semantic Kernel \u00b7 Python \u00b7 LangFlow \u00b7 LangChain. Hands on, not just hands waving."
       },
       {
-        "icon": "◉",
+        "icon": "\u25c9",
         "title": "Speaking & Panels",
         "description": "Available for conferences, keynotes, and panels on autonomous systems, AI architecture, and the future of work."
+      }
+    ],
+    "stats": [
+      {
+        "value": "95%",
+        "label": "Enterprise AI ROI failure rate (MIT 2025)"
+      },
+      {
+        "value": "18mo to 90d",
+        "label": "Typical AI transformation timeline reduction"
+      },
+      {
+        "value": "20+",
+        "label": "Specialized agents"
+      },
+      {
+        "value": "L4-L5",
+        "label": "Dark Factory maturity operating system"
       }
     ]
   },
   "darkFactoryProof": {
     "sectionLabel": "Live System",
-    "statusBadge": "OPERATIONAL — DARK FACTORY v1.0",
+    "statusBadge": "OPERATIONAL \u2014 DARK FACTORY v1.0",
     "headline": "The Sovereign Council",
-    "description": "A live, production-deployed multi-agent AI architecture. Thirteen specialized agents operating across five operational domains. This is not a portfolio project. It is my primary business infrastructure — running continuously, executing across strategy, legal, venture, finance, and build execution with zero human operator touchpoints between task and delivery.",
+    "description": "A live, production-deployed multi-agent AI architecture. Thirteen specialized agents operating across five operational domains. This is not a portfolio project. It is my primary business infrastructure \u2014 running continuously, executing across strategy, legal, venture, finance, and build execution with zero human operator touchpoints between task and delivery.",
     "domains": [
       {
         "tier": "T1",
-        "label": "Executive Command",
+        "label": "Orchestration Layer",
         "color": "gold",
         "agents": [
-          "METATRON — Principal Architect & Systems Orchestrator"
+          "Principal Architect \u00b7 Systems orchestration, task routing, failure-mode supervision"
         ]
       },
       {
         "tier": "T2",
-        "label": "Strategic Intelligence",
+        "label": "Intelligence Layer",
         "color": "cyber",
         "agents": [
-          "The Career Architect — W2 trajectory & positioning",
-          "The Venture Architect — GWI & CMBS strategy",
-          "The Legal Guardian — IP, contracts, compliance",
-          "The Wealth Intelligence System — financial intelligence"
+          "Domain-specialist agents across strategy, governance, legal and compliance intelligence, and financial analysis"
         ]
       },
       {
@@ -101,15 +119,21 @@
         "label": "Execution Layer",
         "color": "slate",
         "agents": [
-          "The Sovereign Design Studio — digital build & infrastructure",
-          "The GrowthWave Forge — content & brand media",
-          "The Talent Engine — recruiting & team build"
+          "Build \u00b7 Content \u00b7 Talent \u00b7 Deployment \u2014 each with dedicated agent pipelines and automated quality gates"
+        ]
+      },
+      {
+        "tier": "T4",
+        "label": "Governance Layer",
+        "color": "slate",
+        "agents": [
+          "Eval design \u00b7 drift detection \u00b7 hallucination mitigation \u00b7 policy enforcement \u00b7 audit-ready logging"
         ]
       }
     ],
     "metrics": [
       {
-        "value": "13",
+        "value": "20+",
         "label": "Specialized agents"
       },
       {
@@ -153,7 +177,7 @@
     "sectionLabel": "Ready to Build",
     "headlinePart1": "If you're serious about",
     "headlineHighlight": "AI transformation",
-    "headlinePart3": "— let's talk architecture.",
+    "headlinePart3": "\u2014 let's talk architecture.",
     "description": "Strategy calls are reserved for CTO, VP Engineering, and Head of AI engagements at organizations ready to move from exploration to execution. Come with a real problem. Leave with a real plan.",
     "cta": {
       "primary": {
@@ -172,11 +196,11 @@
         "90-minute architecture deep-dive",
         "Current state assessment",
         "Dark Factory readiness scoring",
-        "Transformation roadmap (60–90 day)",
+        "Transformation roadmap (60\u201390 day)",
         "Follow-on retainer available"
       ],
-      "qualifierLine1": "QUALIFIED: CTO · VP Engineering · Head of AI",
-      "qualifierLine2": "F500 · High-growth · Venture-backed"
+      "qualifierLine1": "QUALIFIED: CTO \u00b7 VP Engineering \u00b7 Head of AI",
+      "qualifierLine2": "F500 \u00b7 High-growth \u00b7 Venture-backed"
     }
   },
   "faqSchema": [
@@ -190,7 +214,7 @@
     },
     {
       "question": "What is an AI maturity assessment framework?",
-      "answer": "An AI maturity assessment framework evaluates an organization's readiness to implement and scale AI systems across five levels: Level 1 (Manual/Ad-Hoc), Level 2 (Assisted — AI copilots augmenting individual tasks), Level 3 (Automated — AI agents handling defined workflows), Level 4 (Autonomous — multi-agent systems operating with minimal human oversight), and Level 5 (Dark Factory — fully autonomous, AI-orchestrated operational pipelines with zero human touchpoints). Research from MIT indicates that 95% of organizations investing in generative AI see zero measurable ROI, typically because they stall at Level 1-2 without a structured maturity path."
+      "answer": "An AI maturity assessment framework evaluates an organization's readiness to implement and scale AI systems across five levels: Level 1 (Manual/Ad-Hoc), Level 2 (Assisted \u2014 AI copilots augmenting individual tasks), Level 3 (Automated \u2014 AI agents handling defined workflows), Level 4 (Autonomous \u2014 multi-agent systems operating with minimal human oversight), and Level 5 (Dark Factory \u2014 fully autonomous, AI-orchestrated operational pipelines with zero human touchpoints). Research from MIT indicates that 95% of organizations investing in generative AI see zero measurable ROI, typically because they stall at Level 1-2 without a structured maturity path."
     },
     {
       "question": "How can enterprise AI transformation be completed in 90 days instead of 18 months?",
@@ -198,7 +222,7 @@
     },
     {
       "question": "What certifications do you need for enterprise AI roles?",
-      "answer": "Enterprise AI architect roles typically require a combination of cloud platform certifications and practical production experience. Key certifications include Azure Solutions Architect Expert (AZ-305), Azure AI Engineer Associate (AI-102), and platform-specific credentials for Microsoft Copilot Studio or similar tools. However, certifications alone are insufficient — the market values architects who combine strategic consulting experience with hands-on AI agent deployment in production environments, particularly in regulated industries where governance and compliance are non-negotiable."
+      "answer": "AI Systems Architect roles typically require a combination of cloud platform certifications and practical production experience. Key certifications include Azure Solutions Architect Expert (AZ-305), Azure AI Engineer Associate (AI-102), and platform-specific credentials for Microsoft Copilot Studio or similar tools. However, certifications alone are insufficient \u2014 the market values architects who combine strategic consulting experience with hands-on AI agent deployment in production environments, particularly in regulated industries where governance and compliance are non-negotiable."
     }
   ]
 }

@@ -11,12 +11,12 @@
   },
   "footer": {
     "wordmark": "Wilfred Morgan",
-    "tagline": "Enterprise AI Architect · Agentic AI Implementation",
+    "tagline": "AI Systems Architect · Agentic AI Implementation",
     "copyright": "© {year} Wilfred Morgan. All rights reserved.",
     "statusBadge": "Dark Factory · Sovereign Council",
     "navLinks": [
       {
-        "label": "Enterprise AI Case Studies",
+        "label": "AI Systems Case Studies",
         "href": "/work"
       },
       {
@@ -73,8 +73,8 @@
     "personSchema": {
       "name": "Wilfred Morgan",
       "url": "https://wilfredmorgan.com",
-      "jobTitle": "Enterprise AI Architect",
-      "description": "Enterprise AI architect and agentic AI implementation specialist with 15+ years of experience deploying production AI systems in regulated industries. Expert in generative AI architecture, multi-agent orchestration, RAG pipelines, Azure OpenAI, Semantic Kernel, and AI-driven SDLC transformation.",
+      "jobTitle": "AI Systems Architect",
+      "description": "AI Systems Architect and agentic AI implementation specialist with 15+ years of experience deploying production AI systems in regulated industries. Expert in generative AI architecture, multi-agent orchestration, RAG pipelines, Azure OpenAI, Semantic Kernel, and AI-driven SDLC transformation.",
       "knowsAbout": [
         "Enterprise AI Implementation",
         "Agentic AI Architecture",
@@ -106,7 +106,7 @@
         }
       ],
       "occupation": {
-        "name": "Enterprise AI Architect",
+        "name": "AI Systems Architect",
         "category": "15-1299.09",
         "skills": "Agentic AI deployment, generative AI architecture, RAG pipeline design, multi-agent orchestration, enterprise AI implementation, AI maturity assessment, Azure OpenAI, Semantic Kernel, Microsoft Copilot Studio"
       },
@@ -120,14 +120,14 @@
       }
     },
     "webSiteSchema": {
-      "name": "Wilfred Morgan — Enterprise AI Architect",
+      "name": "Wilfred Morgan — AI Systems Architect",
       "url": "https://wilfredmorgan.com",
-      "description": "Enterprise AI architecture consulting, agentic AI implementation, and thought leadership from Wilfred Morgan — production AI deployment for regulated industries."
+      "description": "AI Systems Architecture consulting, agentic AI implementation, and thought leadership from Wilfred Morgan — production AI deployment for regulated industries."
     },
     "professionalServiceSchema": {
       "name": "Wilfred Morgan — Enterprise AI Consulting",
       "url": "https://wilfredmorgan.com",
-      "description": "Enterprise AI architecture consulting specializing in agentic AI implementation, RAG pipeline design, AI maturity assessment, and generative AI architecture for regulated industries.",
+      "description": "AI Systems Architecture consulting specializing in agentic AI implementation, RAG pipeline design, AI maturity assessment, and generative AI architecture for regulated industries.",
       "serviceTypes": [
         "AI Architecture Consulting",
         "Agentic AI Implementation",
