@@ -38,7 +38,7 @@ These advantages compound. They do not wait for the market to catch up.
 
 ## The Architecture That Makes It Real
 
-The Sovereign Council — my primary operating infrastructure — is a live L4–L5 Dark Factory running 13 specialized agents across five operational domains. It did not begin at L4. It began with a clear taxonomy, a defined orchestration model, and a commitment to removing human operator touchpoints at each iteration.
+This multi-agent system — my primary operating infrastructure — is a live L4–L5 Dark Factory running 13 specialized agents across five operational domains. It did not begin at L4. It began with a clear taxonomy, a defined orchestration model, and a commitment to removing human operator touchpoints at each iteration.
 
 The path from where most enterprise AI programs sit today (L1–L2) to where the competitive frontier is (L4–L5) is an architecture problem, not a tooling problem. The models are available. The frameworks exist. What most organizations lack is the architectural design that connects them into an autonomous system.
 

@@ -1,5 +1,5 @@
 ---
-title: "Anatomy of a 13-Agent AI System: How the Sovereign Council Operates"
+title: "Anatomy of a Production Multi-Agent Operating System"
 excerpt: "A technical walkthrough of the multi-tier agent architecture I designed and deployed as my primary operating infrastructure — including the orchestration logic, domain taxonomy, and failure modes."
 date: "2026-02"
 readTime: "18 min"
@@ -9,7 +9,7 @@ draft: false
 
 Most writing about multi-agent AI systems describes systems that do not exist yet, or systems that exist only in controlled demo environments. This is a description of a system that is running right now, processing real tasks, and operating as the primary infrastructure for a portfolio of business entities.
 
-The Sovereign Council is a 13-agent, multi-tier AI architecture organized into a command layer, a strategic intelligence layer, and an execution layer. It is not a chatbot cluster. It is not a prompt chaining script. It is a designed operational system with defined domains, explicit integration surfaces, and governance rules embedded at the system level.
+This production multi-agent operating system is a 13-agent, multi-tier AI architecture organized into a command layer, a strategic intelligence layer, and an execution layer. It is not a chatbot cluster. It is not a prompt chaining script. It is a designed operational system with defined domains, explicit integration surfaces, and governance rules embedded at the system level.
 
 ## The Tier Structure
 
@@ -38,7 +38,7 @@ The execution agents build, produce, and deliver. They receive integration specs
 
 Multi-agent systems fail in predictable ways. The most common failure mode is scope drift — an agent begins handling tasks outside its defined domain because the task is adjacent and no one stopped it. Over time, you end up with agents that have grown into undefined overlap zones, producing output no governance model accounts for.
 
-The Sovereign Council prevents this through three mechanisms:
+The orchestration framework prevents this through three mechanisms:
 
 1. **Hard scope boundaries in every system prompt** — each agent knows what it owns and, critically, what it does not own
 2. **Named routing to adjacent agents** — when a task falls outside scope, the agent names the correct agent and stops

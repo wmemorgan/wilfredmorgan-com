@@ -20,7 +20,7 @@
 | `src/components/Footer.astro` | ✅ COMPLETE | Footer with Dark Factory branding |
 | `src/components/Hero.astro` | ✅ COMPLETE | Full-bleed dark hero |
 | `src/components/AuthorityStatement.astro` | ✅ COMPLETE | What Wilfred builds |
-| `src/components/DarkFactoryProof.astro` | ✅ COMPLETE | Sovereign Council live system |
+| `src/components/DarkFactoryProof.astro` | ✅ COMPLETE | Multi-Agent Operating System live system |
 | `src/components/TechStackMarquee.astro` | ✅ COMPLETE | Scrolling tech stack |
 | `src/components/CTASection.astro` | ✅ COMPLETE | Dual CTA + engagement card |
 | `src/layouts/BaseLayout.astro` | ✅ COMPLETE | Root HTML with full SEO |
